@@ -1,0 +1,30 @@
+
+.formatos_de_textos{
+	font-size: 1.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	display: inline-block;
+}
+.salida_calculo, .valor_calculo{
+	font-size: 1.3em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	display: inline-block;
+}
+.salida_calculo{
+	
+	text-align: right;
+}
+.valor_calculo{
+
+	padding-right: 1px; 
+	text-align: right;
+}
+.valor_calculo_res{
+	font-size: 1.5em;
+	color: blue;
+}
+.enviar{
+	padding-top: 2em;
+	margin-top: 2em;
+}
