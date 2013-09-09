@@ -1,4 +1,6 @@
-
+<?php
+      session_start();
+?>
 <!DOCTYPE html>
 <!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
@@ -47,7 +49,9 @@
 						<!-- top nav -->
 						<div class="topnav">
 							<div class="pull-left">
-								<span>Visitante numero: 10349423</span>
+								<?php
+								   include 'php/contador.php';
+                                ?>
 							</div>							
 						</div>
 					</div>
@@ -83,17 +87,17 @@
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 						</div>
 						<ul class="first-level dropdown-nav">							
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li class="current"><a href="index.php">Inicio</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="cotizar.html">Cotizar</a></li>
+							<li><a href="calculadora.php">Calculdora</a></li>
+							<li><a href="cotizar.php">Cotizar</a></li>
 							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
@@ -101,17 +105,17 @@
 					<!-- este menu que se usa cuando es responsivo lo voy a crear de forma diferente para no hacer el codigo tan largo -->
 					<nav id="main-navigation" class="visible-desktop">
 						<ul class="first-level">
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li class="current"><a href="index.php">Inicio</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="cotizar.html">Cotizar</a></li>
+							<li><a href="calculadora.php">Calculdora</a></li>
+							<li><a href="cotizar.php">Cotizar</a></li>
 							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
@@ -169,37 +173,37 @@
 							<div class="separator"></div>
 						</div>
 						<div class="sidebar-content menu-widget">
-						<ul>
+					<ul>
 								<li>
-									<a href="tiendamujer.html" title="Title">Mujer, Moda, Calzados, Ropa...</a>
+									<a href="tiendamujer.php" title="Title">Mujer, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="tiendahombre.html" title="Title">Hombres, Moda, Calzados, Ropa...</a>
+									<a href="tiendahombre.php" title="Title">Hombres, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="tiendaautos.html" title="Title">Parte de Autos</a>
+									<a href="tiendaautos.php" title="Title">Parte de Autos</a>
 								</li>
 								<li>
 								
-									<a href="tiendajuegos.html" title="Title">Juegos, Computadoras, Celulares...</a>
+									<a href="tiendajuegos.php" title="Title">Juegos, Computadoras, Celulares...</a>
 									
 								<li>
-									<a href="tiendapeliculas.html" title="Title">Películas, Música, Guitarras...</a>
+									<a href="tiendapeliculas.php" title="Title">Películas, Música, Guitarras...</a>
 								</li>
 								<li>
-									<a href="tiendacasa.html" title="Title">Casa, Jardineria</a>
+									<a href="tiendacasa.php" title="Title">Casa, Jardineria</a>
 								</li>
 								<li>
-									<a href="tiendadeporte.html" title="Title">Deportes, Salud</a>
+									<a href="tiendadeporte.php" title="Title">Deportes, Salud</a>
 								</li>
 								<li>
-									<a href="tiendaninos.html" title="Title">Niños, Bebes, Juguetes</a>
+									<a href="tiendaninos.php" title="Title">Niños, Bebes, Juguetes</a>
 								</li>
 								<li>
-									<a href="tiendalibros.html" title="Title">Libros</a>
+									<a href="tiendalibros.php" title="Title">Libros</a>
 								</li>
 								<li>
-									<a href="tiendafiesta.html" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
+									<a href="tiendafiesta.php" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
 								</li>
 							</ul>
 						</div>
@@ -249,119 +253,220 @@
 							<div class="content-inner">
 								<article>
 									<div class="article-header">
-										<h1 class="title">Deportes y Salud...</h1>
+										<h1 class="title">Tienda de Mujeres</h1>
 										
 										<div class="separator"></div>
 									</div>
 									<div class="article-thumbnail">
-											<a href="#"><img  class="beneficio" src="img/assets/507/tiendadeportes.jpg"/></a>
+											<a href="#"><img  class="beneficio" src="img/assets/507/tiendamujer.jpg"/></a>
 										<div class="caption">Image Caption Goes In Here</div>
 									</div>
 									<div class="article-content">
-								<ul>
-								 <table>
-        <tr>
-            <td>
-                <a href="http://edwinwattsgolf.com">edwinwattsgolf.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://tenniscompany.com">tenniscompany.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://3balls.co">3balls.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://roadrunnersports.com">roadrunnersports.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://golf.com">golf.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://westmarine.com">westmarine.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://sportsauthority.com">sportsauthority.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://store.nba.com">store.nba.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://globalgolf.com">globalgolf.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://rei.com">rei.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://patagonia.com">patagonia.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://drugstore.com">drugstore.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://pinemeadowgolf.com">pinemeadowgolf.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://bodybuilding.com">bodybuilding.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://gigagolf.com">gigagolf.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://ebodyboarding.com">ebodyboarding.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://championusa.com">championusa.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://nflshop.co">nflshop.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://fogdog.com">fogdog.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://eastbay.com">eastbay.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://footlocker.com">footlocker.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://finishline.com">finishline.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://thebodyshop-usa.com">thebodyshop-usa.com</a></td>
-            <td style="width: 53px">
-            </td>
-            <td>
-                <a href="http://skinlaboratory.com">skinlaboratory.com</a>
-            </td>
-        </tr>
-    </table>
-		
-            
+									<ul>
+		 <table>
+             <tr>
+                 <td>
+                     <a href="http://victoriassecret.com">
+                     victoriassecret.com</a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://ebay.com ">ebay.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://chicos.com">chicos.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://macys.com">macys.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://bananarepublic.com">bananarepublic.com</a></td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://jcpenny.com">jcpenny.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://gap.com ">gap.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://target.com">target.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://bebe.com">bebe.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://ae.com">ae.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://bluefly.com">bluefly.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://bathandbodyworks.com">bathandbodyworks.com</a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     l<a href="http://izclaiborne.com">izclaiborne.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://forever21.com">forever21.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://gap.com">gap.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://15dollarstore.com">15dollarstore.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://anntaylor.com">anntaylor.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://kennethcole.com">kennethcole.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://shop.nordstrom.com">shop.nordstrom.com</a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://sunglasshut.com">sunglasshut.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://babiesrus.com">babiesrus.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://michaelkors.com ">michaelkors.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://oldnavy.gap.com">oldnavy.gap.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://onlineshoes.com">onlineshoes.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://neimanmarcus.com">neimanmarcus.com</a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://thebodyshop-usa.com">thebodyshop-usa.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://anthropologie.com">anthropologie.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://crocs.com">crocs.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://motherhood.com">motherhood.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://aeropostale.com">aeropostale.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://apeainthepod.com">apeainthepod.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://6pm.com">6pm.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://talbots.com">talbots.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://zappos.com"> </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://express.com">express.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://cavenders.com">cavenders.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://store.alloy.com">store.alloy.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://coach.com">coach.com </a>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <a href="http://amazon.com">amazon.com </a>
+                 </td>
+                 <td style="width: 54px">
+                 </td>
+                 <td>
+                     <a href="http://ninewest.com">ninewest.com </a>
+                 </td>
+             </tr>
+         </table>
 										
-								</ul>
+									</ul>
 
 									<!--
 										<h2 class="post-lead">Blockquotes</h2>

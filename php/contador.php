@@ -1,9 +1,8 @@
-<?php
-      session_start();
+<?php      
       if (isset($_SESSION["cuenta_paginas"])){ 
-         	$_SESSION["cuenta_paginas"] = 1; 
+         	$_SESSION["cuenta_paginas"] = 0; 
       }else{ 
-         	$_SESSION["cuenta_paginas"]=0; 
+         	$_SESSION["cuenta_paginas"]=1; 
       }
       $archivo_contador = "contador/visitas.txt";
       $leer = fopen($archivo_contador,"r");
@@ -16,5 +15,5 @@
       @fputs($leer,$cuenta);
 
       @fclose($leer); 
-      echo '<span class="visitantes">Visitante numero: '.$cuenta.'</span>';
+      echo '<span class="visitantes">Visitante numero: '.$cuenta. ' </span>';
 ?>

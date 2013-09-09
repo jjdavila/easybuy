@@ -1,3 +1,6 @@
+<?php
+      session_start();
+?>
 <!DOCTYPE html>
 <!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
@@ -47,25 +50,8 @@
 						<!-- top nav -->
 						<div class="topnav">
 							<div class="pull-left">
-                                  <?php
-                                    session_start();
-								    if (isset($_SESSION["cuenta_paginas"])){ 
-								         	$_SESSION["cuenta_paginas"] = 1; 
-								      }else{ 
-								         	$_SESSION["cuenta_paginas"]=0; 
-								      }
-								      $archivo_contador = "contador/visitas.txt";
-								      $leer = fopen($archivo_contador,"r");
-								      $cuenta = trim(fread($leer,filesize($archivo_contador))); 
-
-								      if ($cuenta != "") $cuenta = $_SESSION["cuenta_paginas"] + $cuenta;
-								      else $cuenta = 1;
-								      @fclose($leer);
-								      $leer = fopen($archivo_contador,"w");
-								      @fputs($leer,$cuenta);
-
-								      @fclose($leer); 
-								      echo '<span class="visitantes">Visitante numero: '.$cuenta.'</span>';
+                                  <?php                                  
+                                    include 'php/contador.php';
                                 ?>
 								
 							</div>							
@@ -104,15 +90,15 @@
 						</div>
 						<ul class="first-level dropdown-nav">	
 							<li><a href="quienesomos507.php">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="post.html">Cotizar</a></li>
+							<li><a href="calculadora.php">Calculdora</a></li>
+							<li><a href="post.php">Cotizar</a></li>
 							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
@@ -120,17 +106,17 @@
 					<!-- este menu que se usa cuando es responsivo lo voy a crear de forma diferente para no hacer el codigo tan largo -->
 					<nav id="main-navigation" class="visible-desktop">
 						<ul class="first-level">
-							<li class="current"><a href="index507.html">Inicio</a></li>
+							<li class="current"><a href="index507.php">Inicio</a></li>
 							<li><a href="quienesomos507.php">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona<span class="icon awe-chevron-down"></span></a>
+							<li><a href="comofunciona.php">Como Funciona<span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>
 									
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
+							<li><a href="calculadora.php">Calculdora</a></li>
 							<li><a href="cotizar.php">Cotizar</a></li>
 							<li><a href="#">Promociones</a></li>							
 							

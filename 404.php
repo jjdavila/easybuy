@@ -1,4 +1,6 @@
-
+<?php
+      session_start();
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="en"> <!--<![endif]-->
 
@@ -86,21 +88,21 @@
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 						</div>
 						<ul class="first-level dropdown-nav">
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="#">Home Template <span class="pull-right icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-									<li><a href="index.html">Home - SliderJS</a></li>
-									<li><a href="index2.html">Home - CameraSlider</a></li>
-									<li><a href="index3.html">Home - Carousel</a></li>
+									<li><a href="index.php">Home - SliderJS</a></li>
+									<li><a href="index2.php">Home - CameraSlider</a></li>
+									<li><a href="index3.php">Home - Carousel</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Page Template<span class="pull-right icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-									<li><a href="page-leftsidebar.html">Page - Left Sidebar</a></li>
-									<li><a href="page-rightsidebar.html">Page - Right Sidebar</a></li>
-									<li><a href="page-fullwidth.html">Page - Fullwidth</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="404.html">404 Error</a></li>
+									<li><a href="page-leftsidebar.php">Page - Left Sidebar</a></li>
+									<li><a href="page-rightsidebar.php">Page - Right Sidebar</a></li>
+									<li><a href="page-fullwidth.php">Page - Fullwidth</a></li>
+<li><a href="gallery.php">Gallery</a></li>
+<li><a href="404.php">404 Error</a></li>
 
 									<li><a href="#">Third Level<span class="pull-right icon awe-chevron-down"></span></a>
 										<ul class="third-level">
@@ -112,30 +114,30 @@
 									</li>
 								</ul>
 							</li>
-							<li><a href="post.html">Post Archives</a></li>
-							<li><a href="post-single.html">Post Single</a></li>
-							<li><a href="elements.html">Post Elements</a></li>
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="post.php">Post Archives</a></li>
+							<li><a href="post-single.php">Post Single</a></li>
+							<li><a href="elements.php">Post Elements</a></li>
+							<li><a href="about.php">About Us</a></li>
+							<li><a href="contact.php">Contact Us</a></li>
 						</ul>
 					</nav>
 					<nav id="main-navigation" class="visible-desktop">
 						<ul class="first-level">
-							<li class="current"><a href="index.html">Home</a></li>
+							<li class="current"><a href="index.php">Home</a></li>
 							<li><a href="#">Home Template <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-									<li><a href="index.html">Home - SliderJS</a></li>
-									<li><a href="index2.html">Home - CameraSlider</a></li>
-									<li><a href="index3.html">Home - Carousel</a></li>
+									<li><a href="index.php">Home - SliderJS</a></li>
+									<li><a href="index2.php">Home - CameraSlider</a></li>
+									<li><a href="index3.php">Home - Carousel</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Page Template <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-									<li><a href="page-leftsidebar.html">Page - Left Sidebar</a></li>
-									<li><a href="page-rightsidebar.html">Page - Right Sidebar</a></li>
-									<li><a href="page-fullwidth.html">Page - Fullwidth</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="404.html">404 Error</a></li>
+									<li><a href="page-leftsidebar.php">Page - Left Sidebar</a></li>
+									<li><a href="page-rightsidebar.php">Page - Right Sidebar</a></li>
+									<li><a href="page-fullwidth.php">Page - Fullwidth</a></li>
+<li><a href="gallery.php">Gallery</a></li>
+<li><a href="404.php">404 Error</a></li>
 
 									<li><a href="#">Third Level<span class="pull-right icon awe-chevron-right"></span></a>
 										<ul class="third-level">
@@ -147,11 +149,11 @@
 									</li>
 								</ul>
 							</li>
-							<li><a href="post.html">Post Archives</a></li>
-							<li><a href="post-single.html">Post Single</a></li>
-							<li><a href="elements.html">Post Elements</a></li>
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="post.php">Post Archives</a></li>
+							<li><a href="post-single.php">Post Single</a></li>
+							<li><a href="elements.php">Post Elements</a></li>
+							<li><a href="about.php">About Us</a></li>
+							<li><a href="contact.php">Contact Us</a></li>
 							
 						</ul>
 					</nav>

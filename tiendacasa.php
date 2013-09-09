@@ -1,4 +1,6 @@
-
+<?php
+      session_start();
+?>
 <!DOCTYPE html>
 <!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
@@ -47,7 +49,9 @@
 						<!-- top nav -->
 						<div class="topnav">
 							<div class="pull-left">
-								<span>Visitante numero: 10349423</span>
+								<?php
+								    include 'php/contador.php';
+                                ?>
 							</div>							
 						</div>
 					</div>
@@ -249,220 +253,94 @@
 							<div class="content-inner">
 								<article>
 									<div class="article-header">
-										<h1 class="title">Tienda de Mujeres</h1>
+										<h1 class="title">Casa, Jardiner&iacute;a...</h1>
 										
 										<div class="separator"></div>
 									</div>
 									<div class="article-thumbnail">
-											<a href="#"><img  class="beneficio" src="img/assets/507/tiendamujer.jpg"/></a>
+											<a href="#"><img  class="beneficio" src="img/assets/507/tiendajardineria.png"/></a>
 										<div class="caption">Image Caption Goes In Here</div>
 									</div>
 									<div class="article-content">
-									<ul>
-		 <table>
-             <tr>
-                 <td>
-                     <a href="http://victoriassecret.com">
-                     victoriassecret.com</a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://ebay.com ">ebay.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://chicos.com">chicos.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://macys.com">macys.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://bananarepublic.com">bananarepublic.com</a></td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://jcpenny.com">jcpenny.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://gap.com ">gap.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://target.com">target.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://bebe.com">bebe.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://ae.com">ae.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://bluefly.com">bluefly.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://bathandbodyworks.com">bathandbodyworks.com</a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     l<a href="http://izclaiborne.com">izclaiborne.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://forever21.com">forever21.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://gap.com">gap.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://15dollarstore.com">15dollarstore.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://anntaylor.com">anntaylor.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://kennethcole.com">kennethcole.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://shop.nordstrom.com">shop.nordstrom.com</a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://sunglasshut.com">sunglasshut.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://babiesrus.com">babiesrus.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://michaelkors.com ">michaelkors.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://oldnavy.gap.com">oldnavy.gap.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://onlineshoes.com">onlineshoes.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://neimanmarcus.com">neimanmarcus.com</a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://thebodyshop-usa.com">thebodyshop-usa.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://anthropologie.com">anthropologie.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://crocs.com">crocs.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://motherhood.com">motherhood.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://aeropostale.com">aeropostale.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://apeainthepod.com">apeainthepod.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://6pm.com">6pm.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://talbots.com">talbots.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://zappos.com"> </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://express.com">express.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://cavenders.com">cavenders.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://store.alloy.com">store.alloy.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://coach.com">coach.com </a>
-                 </td>
-             </tr>
-             <tr>
-                 <td>
-                     <a href="http://amazon.com">amazon.com </a>
-                 </td>
-                 <td style="width: 54px">
-                 </td>
-                 <td>
-                     <a href="http://ninewest.com">ninewest.com </a>
-                 </td>
-             </tr>
-         </table>
+								<ul>
+								<table>
+        <tr>
+            <td>
+                <a href="http://bedbathandbeyond.com">bedbathandbeyond.com</a></td>
+            <td style="width: 55px">
+            </td>
+            <td>
+                <a href="http://luggageonline.com">luggageonline.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://williams-sonoma.com">williams-sonoma.com</a></td>
+            <td style="width: 55px">
+            </td>
+            <td>
+                <a href="http://gardeners.com">gardeners.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://potterybarnkids.com">potterybarnkids.com</a></td>
+            <td style="width: 55px">
+            </td>
+            <td>
+                <a href="http://samsonite.com">samsonite.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://potterybarn.com">potterybarn.com</a></td>
+            <td style="width: 55px">
+            </td>
+            <td>
+                <a href="http://shop.com">shop.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://lnt.com">lnt.com</a></td>
+            <td style="width: 55px">
+            </td>
+            <td>
+                <a href="http://swissoutpost.com">swissoutpost.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://mikasa.com">mikasa.com</a></td>
+            <td style="width: 55px">
+            </td>
+            <td>
+                <a href="http://wards.com">wards.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://macys.com">macys.com</a></td>
+            <td style="width: 55px">
+            </td>
+            <td>
+                <a href="http://ckbproducts.com">ckbproducts.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://kegworks.com">kegworks.com</a></td>
+            <td style="width: 55px">
+            </td>
+            <td>
+                <a href="http://skymall.com">skymall.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://acehardware.com">acehardware.com</a></td>
+            <td style="width: 55px">
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+		
+            
 										
-									</ul>
+								</ul>
 
 									<!--
 										<h2 class="post-lead">Blockquotes</h2>

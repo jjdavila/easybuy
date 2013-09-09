@@ -1,4 +1,6 @@
-
+<?php
+      session_start();
+?>
 <!DOCTYPE html>
 <!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
@@ -13,9 +15,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- Styles -->
-		<link rel="stylesheet" href="css/frenzy-orange.css">		
-		<link rel="stylesheet" href="css/easy507.css">		
-	    <!-- Fav and touch icons -->
+		<link rel="stylesheet" href="css/frenzy-orange.css">
+		
+		<!-- Fav and touch icons -->
 		<link rel="shortcut icon" href="img/ico/favicon.ico">
 
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
@@ -24,7 +26,7 @@
 		
 		<!-- JS Libs -->
 		
-		<script src="js/libs/jquery.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery.js"><\/script>')</script>
 
 		<script src="js/libs/modernizr.js"></script>
 		<script src="js/libs/selectivizr-min.js"></script>
@@ -32,9 +34,6 @@
 		<script src="js/bootstrap/bootstrap.js"></script>
 		<script src="js/plugins/slides.jquery.js"></script>
 		<script src="js/custom.js"></script>
-		<script src="js/easy507/calculadora.js"></script>
-		<script src="js/easy507/validarcampo.js"></script>
-		<script src="js/easy507/validaciones.js"></script>
 
 	</head>
 	<body>
@@ -51,24 +50,7 @@
 						<div class="topnav">
 							<div class="pull-left">
 								<?php
-								    session_start();
-                                    if (isset($_SESSION["cuenta_paginas"])){ 
-									   	$_SESSION["cuenta_paginas"] = 0; 
-									}else{ 
-									   	$_SESSION["cuenta_paginas"]=1; 
-									}
-                                    $archivo_contador = "contador/visitas.txt";
-                                    $leer = fopen($archivo_contador,"r");
-                                    $cuenta = trim(fread($leer,filesize($archivo_contador))); 
-
-                                    if ($cuenta != "") $cuenta = $_SESSION["cuenta_paginas"] + $cuenta;
-                                    else $cuenta = 1;
-                                    @fclose($leer);
-                                    $leer = fopen($archivo_contador,"w");
-                                    @fputs($leer,$cuenta);
-
-                                    @fclose($leer); 
-                                    echo '<span class="visitantes">Visitante numero: '.$cuenta.'</span>';
+								   include 'php/contador.php';
                                 ?>
 							</div>							
 						</div>
@@ -105,37 +87,36 @@
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 						</div>
 						<ul class="first-level dropdown-nav">							
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="post.html">Quienes Somos</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li class="current"><a href="index.php">Inicio</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="cotizar.html">Cotizar</a></li>
-							<li><a href="post-single.html">Promociones</a></li>							
+							<li><a href="calculadora.php">Calculdora</a></li>
+							<li><a href="cotizar.php">Cotizar</a></li>
+							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
 					</nav>
 					<!-- este menu que se usa cuando es responsivo lo voy a crear de forma diferente para no hacer el codigo tan largo -->
 					<nav id="main-navigation" class="visible-desktop">
 						<ul class="first-level">
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li class="current"><a href="index.php">Inicio</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="cotizar.html">Cotizar</a></li>
-							<li><a href="post-single.html">Promociones</a></li>							
+							<li><a href="calculadora.php">Calculdora</a></li>
+							<li><a href="cotizar.php">Cotizar</a></li>
+							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
 					</nav>
@@ -192,42 +173,42 @@
 							<div class="separator"></div>
 						</div>
 						<div class="sidebar-content menu-widget">
-					<ul>
+						<ul>
 								<li>
-									<a href="tiendamujer.html" title="Title">Mujer, Moda, Calzados, Ropa...</a>
+									<a href="tiendamujer.php" title="Title">Mujer, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="tiendahombre.html" title="Title">Hombres, Moda, Calzados, Ropa...</a>
+									<a href="tiendahombre.php" title="Title">Hombres, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="tiendaautos.html" title="Title">Parte de Autos</a>
+									<a href="tiendaautos.php" title="Title">Parte de Autos</a>
 								</li>
 								<li>
 								
-									<a href="tiendajuegos.html" title="Title">Juegos, Computadoras, Celulares...</a>
+									<a href="tiendajuegos.php" title="Title">Juegos, Computadoras, Celulares...</a>
 									
 								<li>
-									<a href="tiendapeliculas.html" title="Title">Películas, Música, Guitarras...</a>
+									<a href="tiendapeliculas.php" title="Title">Películas, Música, Guitarras...</a>
 								</li>
 								<li>
-									<a href="tiendacasa.html" title="Title">Casa, Jardineria</a>
+									<a href="tiendacasa.php" title="Title">Casa, Jardineria</a>
 								</li>
 								<li>
-									<a href="tiendadeporte.html" title="Title">Deportes, Salud</a>
+									<a href="tiendadeporte.php" title="Title">Deportes, Salud</a>
 								</li>
 								<li>
-									<a href="tiendaninos.html" title="Title">Niños, Bebes, Juguetes</a>
+									<a href="tiendaninos.php" title="Title">Niños, Bebes, Juguetes</a>
 								</li>
 								<li>
-									<a href="tiendalibros.html" title="Title">Libros</a>
+									<a href="tiendalibros.php" title="Title">Libros</a>
 								</li>
 								<li>
-									<a href="tiendafiesta.html" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
+									<a href="tiendafiesta.php" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<!-- datos de noticias.... -->
+					<!-- Latest News Widget -->
 					<div class="sidebar-widget" id="latest-news">
 						
 						<div class="sidebar-header">
@@ -272,84 +253,74 @@
 							<div class="content-inner">
 								<article>
 									<div class="article-header">
-										<h1 class="title">Calculadora</h1>
+										<h1 class="title">Tienda de Libros...</h1>
 										
 										<div class="separator"></div>
 									</div>
 									<div class="article-thumbnail">
-											<a href="#"><img  class="beneficio" src="img/assets/507/calculadora.jpg"/></a>
-										<div class="caption">Realiza tus calculos</div>
+											<a href="#"><img  class="beneficio" src="img/assets/507/tiendalibros.jpg"/></a>
+										<div class="caption">Image Caption Goes In Here</div>
 									</div>
 									<div class="article-content">
-										<div class="row-fluid">
-											<div>
-												<h4>Validate State</h4>
-											    
+								<ul>
+							<table>
+								<tr>
+									<td>
+										<a href="http://alibris.com">alibris.com</a></td>
+									<td style="width: 50px">
+									</td>
+									<td>
+										<a href="http://barnesandnoble.com">barnesandnoble.com</a></td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://amazon.com">amazon.com</a></td>
+									<td style="width: 50px">
+									</td>
+									<td>
+										<a href="http://scholasticstore.com">scholasticstore.com</a></td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://tfaw.com">tfaw.com</a></td>
+									<td style="width: 50px">
+									</td>
+									<td>
+									</td>
+								</tr>
+							</table>
+		
+            
+										
+								</ul>
 
-											     <div class="control-group info">
-												    <label class="control-label" for="precio">Precio:</label>
-												    <div class="controls">
-												    	<input type="text" id="precio" class="precio">
-												    	<span class="help-inline">Introduzca el precio que aparece en la pagina!</span>
-												    </div>
-											    </div>
-											    <div>
-												<label class="control-label">Peso:</label>
-												<div>													
-													<select id="peso" name="peso">
-												        <option value="1" selected> 1 </option>
-														<option value="2"> 2 </option>
-														<option value="3"> 3 </option>
-														<option value="4"> 4 </option>
-														<option value="5"> 5 </option>
-														<option value="6"> 6 </option>
-														<option value="7"> 7 </option>
-														<option value="8"> 8 </option>
-														<option value="9"> 9 </option>
-														<option value="10"> 10 </option>
-														<option value="11"> 11 </option>
-														<option value="12"> 12 </option>
-														<option value="15"> 15 </option>
-														<option value="18"> 18 </option>
-														<option value="20"> 20 </option>
-														<option value="25"> 25 </option>
-														<option value="30"> 30 </option>
-														<option value="35"> 35 </option>
-														<option value="40"> 40 </option>
-														<option value="45"> 45 </option>
-														<option value="50"> 50 </option>
-														<option value="75"> 75 </option>
-												    </select>
-												     <select id="lb_kg" name="lb_kg" >
-														<option value="1" selected> Lb(s) </option>
-														<option value="2" > Kg(s) </option>
-													</select>
-												</div>
-											    
-										       </div>
-										       <div>
-											       <span class="salida_calculo">Valor del Flete= </span>
-											       <span id="valorflete"  class="valor_calculo">0</span>
-										       </div>
-										       <div>
-											       <span class="salida_calculo">Gastos del Tramite y manejo= </span>
-											       <span id="gastos" class="valor_calculo">0</span>
-										       </div>
-										       <div>
-											       <span class="salida_calculo">Total a Pagar= </span>
-												   <span id="preciototal" class="valor_calculo">0</span>
-										       </div>
-										       <div>
-											       <span class="salida_calculo">Abono Minimo= </span>
-											       <span id="abono" class="valor_calculo">0</span>
-										       </div>
-											   <div>
-											   	 <button id="enviar" class="btn btn-large btn-primary" type="button" value="Calcular" onclick="Calcular();">Calcular</button>
-											   </div>
-											</div>
-										</div> 
-									</div>
-															
+									<!--
+										<h2 class="post-lead">Blockquotes</h2>
+										<blockquote>
+											<p>Somos una empresa totalmente nueva, estamos ubicados 
+										  en Urbanizaci&oacute;n Green Valley Calle A No. 111, Albrook, 
+										  Anc&oacute;n.<br>Cont&aacute;ctanos a los tel&eacute;fonos: <br>Oficina: 
+										  (507)315-0563<br>Celular:6220-1905.<br> </p>
+											<small>Someone famous <cite title="Source Title">Source Title</cite></small>
+										</blockquote>
+
+										<h3 class="post-lead">Unordered &amp; Ordered Lists</h3>
+										
+										<ul>
+											<li>Hoc est non modo cor non habere, sed ne palatum quidem.</li>
+											<li>Illis videtur, qui illud non dubitant bonum dicere -;</li>
+										</ul>
+										<ol>
+											<li>Si enim ita est, vide ne facinus facias, cum mori suadeas.</li>
+											<li>Familiares nostros, credo, Sironem dicis et Philodemum, cum optimos viros, tum homines doctissimos.</li>
+											<li>Sed tamen enitar et, si minus multa mihi occurrent, non fugiam ista popularia.</li>
+											<li>At iam decimum annum in spelunca iacet.</li>
+										</ol>
+										<p>
+											Ut dignissim aliquet nibh tristique hendrerit. Donec ullamcorper nulla quis metus vulputate id placerat augue eleifend. Aenean venenatis consectetur orci, sit amet ultricies magna sagittis vel. Nulla non diam nisi, ut ultrices massa. Pellentesque sed nisl metus. Praesent a mi vel ante molestie venenatis.
+										</p>
+									</div>	
+								-->
 								</article>								
 							</div>
 

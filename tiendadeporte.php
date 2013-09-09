@@ -1,4 +1,6 @@
-
+<?php
+      session_start();
+?>
 <!DOCTYPE html>
 <!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
@@ -14,7 +16,6 @@
 		
 		<!-- Styles -->
 		<link rel="stylesheet" href="css/frenzy-orange.css">
-		<link rel="stylesheet" href="css/easy507.css">
 		
 		<!-- Fav and touch icons -->
 		<link rel="shortcut icon" href="img/ico/favicon.ico">
@@ -49,24 +50,7 @@
 						<div class="topnav">
 							<div class="pull-left">
 								<?php
-								    session_start();
-                                    if (isset($_SESSION["cuenta_paginas"])){ 
-									   	$_SESSION["cuenta_paginas"] = 0; 
-									}else{ 
-									   	$_SESSION["cuenta_paginas"]=1; 
-									}
-                                    $archivo_contador = "contador/visitas.txt";
-                                    $leer = fopen($archivo_contador,"r");
-                                    $cuenta = trim(fread($leer,filesize($archivo_contador))); 
-
-                                    if ($cuenta != "") $cuenta = $_SESSION["cuenta_paginas"] + $cuenta;
-                                    else $cuenta = 1;
-                                    @fclose($leer);
-                                    $leer = fopen($archivo_contador,"w");
-                                    @fputs($leer,$cuenta);
-
-                                    @fclose($leer); 
-                                    echo '<span class="visitantes">Visitante numero: '.$cuenta.'</span>';
+								    include 'php/contador.php';
                                 ?>
 							</div>							
 						</div>
@@ -103,7 +87,7 @@
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 						</div>
 						<ul class="first-level dropdown-nav">							
-							<li class="current"><a href="index.html">Inicio</a></li>					
+							<li class="current"><a href="index.html">Inicio</a></li>
 							<li><a href="quienesomos507.html">Quienes Somos</a></li>
 							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
@@ -122,7 +106,7 @@
 					<nav id="main-navigation" class="visible-desktop">
 						<ul class="first-level">
 							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>				
+							<li><a href="quienesomos507.html">Quienes Somos</a></li>
 							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
 								    <li><a href="comofunciona.html">Como Funciona </a></li>
@@ -189,7 +173,7 @@
 							<div class="separator"></div>
 						</div>
 						<div class="sidebar-content menu-widget">
-							<ul>
+						<ul>
 								<li>
 									<a href="tiendamujer.html" title="Title">Mujer, Moda, Calzados, Ropa...</a>
 								</li>
@@ -269,30 +253,127 @@
 							<div class="content-inner">
 								<article>
 									<div class="article-header">
-										<h1 class="title">¿Como funciona?</h1>
+										<h1 class="title">Deportes y Salud...</h1>
 										
 										<div class="separator"></div>
 									</div>
 									<div class="article-thumbnail">
-										<a href="#"><img  class="beneficio" src="img/assets/507/comofunciona.jpg"/></a>
+											<a href="#"><img  class="beneficio" src="img/assets/507/tiendadeportes.jpg"/></a>
 										<div class="caption">Image Caption Goes In Here</div>
 									</div>
 									<div class="article-content">
-									<ol>
-										<p>
+								<ul>
+								 <table>
+        <tr>
+            <td>
+                <a href="http://edwinwattsgolf.com">edwinwattsgolf.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://tenniscompany.com">tenniscompany.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://3balls.co">3balls.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://roadrunnersports.com">roadrunnersports.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://golf.com">golf.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://westmarine.com">westmarine.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://sportsauthority.com">sportsauthority.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://store.nba.com">store.nba.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://globalgolf.com">globalgolf.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://rei.com">rei.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://patagonia.com">patagonia.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://drugstore.com">drugstore.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://pinemeadowgolf.com">pinemeadowgolf.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://bodybuilding.com">bodybuilding.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://gigagolf.com">gigagolf.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://ebodyboarding.com">ebodyboarding.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://championusa.com">championusa.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://nflshop.co">nflshop.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://fogdog.com">fogdog.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://eastbay.com">eastbay.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://footlocker.com">footlocker.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://finishline.com">finishline.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://thebodyshop-usa.com">thebodyshop-usa.com</a></td>
+            <td style="width: 53px">
+            </td>
+            <td>
+                <a href="http://skinlaboratory.com">skinlaboratory.com</a>
+            </td>
+        </tr>
+    </table>
+		
+            
 										
-										<p>1. Nos dices que producto deseas comprar o nos das la dirección de la página donde esta el producto.</p>
-										<p>2. Te enviamos la cotización del total de tu compra con un peso estimado. Nota: el peso se calcula en números enteros, por lo cual cada libra que pase de 0.1 onza, se toma como una libra entera.</p>
-										<p>3. Si decides comprarlo, debes proceder a efectuar un depósito por el 50% del valor de tu compra en <b> BANESCO a la cuenta No. 201000784740 a nombre de Edwin Herrera</b> como abono correspondiente, una vez efectuado el depósito, nos hacer saber y procedemos con la compra.</p>
-										<p>4. Te enviamos los correos de confirmación del pago de tu compra, asi como toda la información enviada por la tienda o vendedor sobre el status de tu compra. También, puedes revisar el status de todas tus ordenes, enviándonos un mail y procederemos a informarte el status de las mismas</p>
-										<p>5. Cuando el producto llegue a nuestras oficinas te informaremos para que pases a retirarlo. Si en tal caso la orden no llegase, te regresamos la totalidad pagada, según nuestros términos de aceptación.</p>
-										
-										</p>
-										</ol>
-									<!-- 
-										<h3 class="post-lead">Blockquotes</h3>
+								</ul>
+
+									<!--
+										<h2 class="post-lead">Blockquotes</h2>
 										<blockquote>
-											<p>Quid paulo ante, inquit, dixerim nonne meministi, cum omnis dolor detractus esset, variari, non augeri voluptatem?</p>
+											<p>Somos una empresa totalmente nueva, estamos ubicados 
+										  en Urbanizaci&oacute;n Green Valley Calle A No. 111, Albrook, 
+										  Anc&oacute;n.<br>Cont&aacute;ctanos a los tel&eacute;fonos: <br>Oficina: 
+										  (507)315-0563<br>Celular:6220-1905.<br> </p>
 											<small>Someone famous <cite title="Source Title">Source Title</cite></small>
 										</blockquote>
 
@@ -312,7 +393,7 @@
 											Ut dignissim aliquet nibh tristique hendrerit. Donec ullamcorper nulla quis metus vulputate id placerat augue eleifend. Aenean venenatis consectetur orci, sit amet ultricies magna sagittis vel. Nulla non diam nisi, ut ultrices massa. Pellentesque sed nisl metus. Praesent a mi vel ante molestie venenatis.
 										</p>
 									</div>	
-									-->
+								-->
 								</article>								
 							</div>
 

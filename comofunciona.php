@@ -1,4 +1,6 @@
-
+<?php
+      session_start();
+?>
 <!DOCTYPE html>
 <!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
@@ -103,38 +105,36 @@
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 						</div>
 						<ul class="first-level dropdown-nav">							
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li class="current"><a href="index.php">Inicio</a></li>					
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="post.html">Calculdora</a></li>
-							<li><a href="post.html">Cotizar</a></li>
-							<li><a href="post-single.html">Promociones</a></li>							
+							<li><a href="calculadora.php">Calculdora</a></li>
+							<li><a href="cotizar.php">Cotizar</a></li>
+							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
 					</nav>
 					<!-- este menu que se usa cuando es responsivo lo voy a crear de forma diferente para no hacer el codigo tan largo -->
 					<nav id="main-navigation" class="visible-desktop">
 						<ul class="first-level">
-							<li class="current"><a href="index507.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li class="current"><a href="index.php">Inicio</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>				
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="post.html">Calculdora</a></li>
-							<li><a href="post.html">Cotizar</a></li>
-							<li><a href="post-single.html">Promociones</a></li>							
+							<li><a href="calculadora.php">Calculdora</a></li>
+							<li><a href="cotizar.php">Cotizar</a></li>
+							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
 					</nav>
@@ -193,30 +193,35 @@
 						<div class="sidebar-content menu-widget">
 							<ul>
 								<li>
-									<a href="#" title="Title">Primary Menu 1</a>
+									<a href="tiendamujer.php" title="Title">Mujer, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="#" title="Title">Primary Menu 2</a>
+									<a href="tiendahombre.php" title="Title">Hombres, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="#" title="Title">Primary Menu 3</a>
+									<a href="tiendaautos.php" title="Title">Parte de Autos</a>
 								</li>
 								<li>
-									<a title="Title">Another Menu 1 <span class="pull-right icon awe-chevron-down"></span></a>
-									<ul>
-										<li>
-											<a href="#" title="Title">Sub Menu 1 </a>
-										</li>
-										<li>
-											<a href="#" title="Title">Sub Menu 2</a>
-										</li>
-									</ul>
+								
+									<a href="tiendajuegos.php" title="Title">Juegos, Computadoras, Celulares...</a>
+									
+								<li>
+									<a href="tiendapeliculas.php" title="Title">Películas, Música, Guitarras...</a>
 								</li>
 								<li>
-									<a href="#" title="Title">Yet Another Menu</a>
+									<a href="tiendacasa.php" title="Title">Casa, Jardineria</a>
 								</li>
 								<li>
-									<a href="#" title="Title">Sample Menu</a>
+									<a href="tiendadeporte.php" title="Title">Deportes, Salud</a>
+								</li>
+								<li>
+									<a href="tiendaninos.php" title="Title">Niños, Bebes, Juguetes</a>
+								</li>
+								<li>
+									<a href="tiendalibros.php" title="Title">Libros</a>
+								</li>
+								<li>
+									<a href="tiendafiesta.php" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
 								</li>
 							</ul>
 						</div>
@@ -266,46 +271,27 @@
 							<div class="content-inner">
 								<article>
 									<div class="article-header">
-										<h1 class="title">Beneficios</h1>
+										<h1 class="title">¿Como funciona?</h1>
 										
 										<div class="separator"></div>
 									</div>
 									<div class="article-thumbnail">
-										<a href="#"><img src="img/assets/slideshow/slide-1.png" alt="thumbnail" /></a>
+										<a href="#"><img  class="beneficio" src="img/assets/507/comofunciona.jpg"/></a>
 										<div class="caption">Image Caption Goes In Here</div>
 									</div>
 									<div class="article-content">
-
-									  <ol>
-										<li>Tendr&aacute;s a tu alcance muchos productos que no consigues 
-										en el pa&iacute;s o que son muy costosos.</li>
-										<li>          
-										Seguridad y confiabilidad en las compras por Internet.</li>
-										<li> F&aacute;cil y sin complicaciones, nosotros nos encargamos de todo 
-										el proceso hasta la llegada de tu paquete.</li>
-										<li> No existen contraltos 
-										ni mensualidaes usted paga por lo que trae.</li>
-										<li>Tendras la oportunidad de comprar o subastar a trav&eacute;s de una 
-										cuenta de eBay con direcci&oacute;n en los EE.UU.</li>
-										<li>Las compras ser&aacute;n realizadas a trav&eacute;s de un abono del 50% y pagaras la 
-										diferencia cuando tu mercanc&iacute;a este en tus manos.</li>
-										<li>Efectuamos una 
-										verificaci&oacute;n de las p&aacute;ginas en donde deseas comprar.</li>
-										<li>Recibes tu dinero de vuelta, si el 
-										producto no llegase seg&uacute;n nuestras condiciones de aceptaci&oacute;n.</li>
-										<li>        
-										Precios accesibles para el transporte mar&iacute;timo y a&eacute;reo.</li>
-										<li>         
-										   Flexibilidad en cuanto a horarios.</li>
-										<li> Notificaci&oacute;n autom&aacute;tica a la llegada de tu paquete 
-										por correo electr&oacute;nico y chat a su celular.</li>
-										<li> No necesitas tener tarjeta de cr&eacute;dito, como consecuencia 
-										nadie puede copiar la informaci&oacute;n de la tarjeta.</li>
-										<li> Ahorras tiempo, ya que el proceso 
-										de ordenar tu pedido es realizado por nosotros.</li>
-										<li> Su email privado esta protegido ya 
-										que nuestro sistema filtra los emails no deseados.</li>
-									</ol>
+									<ol>
+										<p>
+										
+										<p>1. Nos dices que producto deseas comprar o nos das la dirección de la página donde esta el producto.</p>
+										<p>2. Te enviamos la cotización del total de tu compra con un peso estimado. Nota: el peso se calcula en números enteros, por lo cual cada libra que pase de 0.1 onza, se toma como una libra entera.</p>
+										<p>3. Si decides comprarlo, debes proceder a efectuar un depósito por el 50% del valor de tu compra en <b> BANESCO a la cuenta No. 201000784740 a nombre de Edwin Herrera</b> como abono correspondiente, una vez efectuado el depósito, nos hacer saber y procedemos con la compra.</p>
+										<p>4. Te enviamos los correos de confirmación del pago de tu compra, asi como toda la información enviada por la tienda o vendedor sobre el status de tu compra. También, puedes revisar el status de todas tus ordenes, enviándonos un mail y procederemos a informarte el status de las mismas</p>
+										<p>5. Cuando el producto llegue a nuestras oficinas te informaremos para que pases a retirarlo. Si en tal caso la orden no llegase, te regresamos la totalidad pagada, según nuestros términos de aceptación.</p>
+										
+										</p>
+										</ol>
+									<!-- 
 										<h3 class="post-lead">Blockquotes</h3>
 										<blockquote>
 											<p>Quid paulo ante, inquit, dixerim nonne meministi, cum omnis dolor detractus esset, variari, non augeri voluptatem?</p>
@@ -327,7 +313,8 @@
 										<p>
 											Ut dignissim aliquet nibh tristique hendrerit. Donec ullamcorper nulla quis metus vulputate id placerat augue eleifend. Aenean venenatis consectetur orci, sit amet ultricies magna sagittis vel. Nulla non diam nisi, ut ultrices massa. Pellentesque sed nisl metus. Praesent a mi vel ante molestie venenatis.
 										</p>
-									</div>								
+									</div>	
+									-->
 								</article>								
 							</div>
 

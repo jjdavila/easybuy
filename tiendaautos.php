@@ -1,4 +1,6 @@
-
+<?php
+      session_start();
+?>
 <!DOCTYPE html>
 <!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
@@ -14,7 +16,6 @@
 		
 		<!-- Styles -->
 		<link rel="stylesheet" href="css/frenzy-orange.css">
-		<link rel="stylesheet" href="css/easy507.css">
 		
 		<!-- Fav and touch icons -->
 		<link rel="shortcut icon" href="img/ico/favicon.ico">
@@ -49,24 +50,7 @@
 						<div class="topnav">
 							<div class="pull-left">
 								<?php
-								    session_start();
-                                    if (isset($_SESSION["cuenta_paginas"])){ 
-									   	$_SESSION["cuenta_paginas"] = 0; 
-									}else{ 
-									   	$_SESSION["cuenta_paginas"]=1; 
-									}
-                                    $archivo_contador = "contador/visitas.txt";
-                                    $leer = fopen($archivo_contador,"r");
-                                    $cuenta = trim(fread($leer,filesize($archivo_contador))); 
-
-                                    if ($cuenta != "") $cuenta = $_SESSION["cuenta_paginas"] + $cuenta;
-                                    else $cuenta = 1;
-                                    @fclose($leer);
-                                    $leer = fopen($archivo_contador,"w");
-                                    @fputs($leer,$cuenta);
-
-                                    @fclose($leer); 
-                                    echo '<span class="visitantes">Visitante numero: '.$cuenta.'</span>';
+								    include 'php/contador.php';
                                 ?>
 							</div>							
 						</div>
@@ -103,17 +87,17 @@
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 						</div>
 						<ul class="first-level dropdown-nav">							
-						<li class="current"><a href="index.html">Inicio</a></li>
+							<li class="current"><a href="index.html">Inicio</a></li>
 							<li><a href="quienesomos507.html">Quienes Somos</a></li>
 							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
 								    <li><a href="comofunciona.html">Como Funciona </a></li>
 									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+									<li><a href="#">Forma de pago</a></li>								
 								</ul>
 							</li>														
 							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="cotizar.php">Cotizar</a></li>
+							<li><a href="cotizar.html">Cotizar</a></li>
 							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
@@ -269,35 +253,147 @@
 							<div class="content-inner">
 								<article>
 									<div class="article-header">
-										<h1 class="title">Beneficios de Easy buy 507</h1>
+										<h1 class="title">Auto Partes</h1>
 										
 										<div class="separator"></div>
 									</div>
 									<div class="article-thumbnail">
-										<a href="#"><img  class="beneficio" src="img/assets/507/beneficios.png"/></a>
-										<div class="caption">Innovamos en el mercado</div>
+											<a href="#"><img  class="beneficio" src="img/assets/507/autopartes.jpg"/></a>
+										<div class="caption">Image Caption Goes In Here</div>
 									</div>
-									<div class="article-content">				
-										<h3 class="post-lead">Beneficios</h3>
+									<div class="article-content">
+								<ul>
+								<table>
+        <tr>
+            <td>
+                <a href="http://Motosport.com">Motosport.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+                <a href="http://MotorcycleSuperstore.com">MotorcycleSuperstore.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;<a href="http://CarPartsWholesale.com">CarPartsWholesale.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+                <a href="http://bikebandit.com">bikebandit.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://jcWhitney.com">jcWhitney.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+                &nbsp;<a href="http://Motosport.com">Motosport.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;<a href="http://RockAuto.com">RockAuto.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+                &nbsp;<a href="http://jpcycles.com">jpcycles.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://4x4superstore.com">4x4superstore.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+                &nbsp;<a href="http://Autopartswarehouse.com">Autopartswarehouse.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://AutoPart.com">AutoPart.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+                <a href="http://westmarine.com">westmarine.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://cskauto.com">cskauto.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+                &nbsp;<a href="http://nissanpartszone.com">nissanpartszone.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://napaonline.com">napaonline.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+                &nbsp;<a href="http://parts.com">parts.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://AutoPartsGIANT.com">AutoPartsGIANT.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+                &nbsp;<a href="http://boatersworld.com">boatersworld.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;<a href="http://classicautoparts.com">classicautoparts.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+                <a href="http://danchuk.com">danchuk.com</a></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://MotorcycleParts.com">MotorcycleParts.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+                &nbsp;<a href="http://summitracing.com">summitracing.com</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;<a href="http://kanter.com">kanter.com</a></td>
+            <td style="width: 50px">
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+		
+            
 										
+								</ul>
+
+									<!--
+										<h2 class="post-lead">Blockquotes</h2>
+										<blockquote>
+											<p>Somos una empresa totalmente nueva, estamos ubicados 
+										  en Urbanizaci&oacute;n Green Valley Calle A No. 111, Albrook, 
+										  Anc&oacute;n.<br>Cont&aacute;ctanos a los tel&eacute;fonos: <br>Oficina: 
+										  (507)315-0563<br>Celular:6220-1905.<br> </p>
+											<small>Someone famous <cite title="Source Title">Source Title</cite></small>
+										</blockquote>
+
+										<h3 class="post-lead">Unordered &amp; Ordered Lists</h3>
+										
+										<ul>
+											<li>Hoc est non modo cor non habere, sed ne palatum quidem.</li>
+											<li>Illis videtur, qui illud non dubitant bonum dicere -;</li>
+										</ul>
 										<ol>
-											<li>Tendrás a tu alcance muchos productos que no consigues en el país o que son muy costosos.</li>
-											<li>Seguridad y confiabilidad en las compras por Internet.</li>
-											<li>Fácil y sin complicaciones, nosotros nos encargamos de todo el proceso hasta la llegada de tu paquete.</li>
-											<li>No existen contraltos ni mensualidades usted paga por lo que trae.</li>
-											<li>Tendrás la oportunidad de comprar o subastar a través de una cuenta de eBay con dirección en los EE.UU.</li>
-											<li>Las compras serán realizadas a través de un abono del 50% y pagaras la diferencia cuando tu mercancía este en tus manos.</li>
-											<li>Efectuamos una verificación de las páginas en donde deseas comprar.</li>
-											<li>Recibes tu dinero de vuelta, si el producto no llegase según nuestras condiciones de aceptación.</li>
-											<li>Precios accesibles para el transporte marítimo y aéreo.</li>
-											<li>Flexibilidad en cuanto a horarios.</li>
-											<li>Notificación automática a la llegada de tu paquete por correo electrónico y chat a su celular.</li>
-											<li>No necesitas tener tarjeta de crédito, como consecuencia nadie puede copiar la información de la tarjeta.</li>
-											<li>Ahorras tiempo, ya que el proceso de ordenar tu pedido es realizado por nosotros.</li>
-											<li>Su email privado está protegido ya que nuestro sistema filtra los emails no deseados.</li>										
+											<li>Si enim ita est, vide ne facinus facias, cum mori suadeas.</li>
+											<li>Familiares nostros, credo, Sironem dicis et Philodemum, cum optimos viros, tum homines doctissimos.</li>
+											<li>Sed tamen enitar et, si minus multa mihi occurrent, non fugiam ista popularia.</li>
+											<li>At iam decimum annum in spelunca iacet.</li>
 										</ol>
-										
-									</div>								
+										<p>
+											Ut dignissim aliquet nibh tristique hendrerit. Donec ullamcorper nulla quis metus vulputate id placerat augue eleifend. Aenean venenatis consectetur orci, sit amet ultricies magna sagittis vel. Nulla non diam nisi, ut ultrices massa. Pellentesque sed nisl metus. Praesent a mi vel ante molestie venenatis.
+										</p>
+									</div>	
+								-->
 								</article>								
 							</div>
 

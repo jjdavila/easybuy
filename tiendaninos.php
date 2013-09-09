@@ -1,4 +1,6 @@
-
+<?php
+      session_start();
+?>
 <!DOCTYPE html>
 <!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
@@ -47,7 +49,9 @@
 						<!-- top nav -->
 						<div class="topnav">
 							<div class="pull-left">
-								<span>Visitante numero: 10349423</span>
+								<?php
+								    include 'php/contador.php';
+                                ?>
 							</div>							
 						</div>
 					</div>
@@ -83,17 +87,17 @@
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 						</div>
 						<ul class="first-level dropdown-nav">							
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li class="current"><a href="index.php">Inicio</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="cotizar.html">Cotizar</a></li>
+							<li><a href="calculadora.php">Calculdora</a></li>
+							<li><a href="cotizar.php">Cotizar</a></li>
 							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
@@ -101,17 +105,17 @@
 					<!-- este menu que se usa cuando es responsivo lo voy a crear de forma diferente para no hacer el codigo tan largo -->
 					<nav id="main-navigation" class="visible-desktop">
 						<ul class="first-level">
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li class="current"><a href="index.php">Inicio</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="cotizar.html">Cotizar</a></li>
+							<li><a href="calculadora.php">Calculdora</a></li>
+							<li><a href="cotizar.php">Cotizar</a></li>
 							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
@@ -171,35 +175,35 @@
 						<div class="sidebar-content menu-widget">
 							<ul>
 								<li>
-									<a href="tiendamujer.html" title="Title">Mujer, Moda, Calzados, Ropa...</a>
+									<a href="tiendamujer.php" title="Title">Mujer, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="tiendahombre.html" title="Title">Hombres, Moda, Calzados, Ropa...</a>
+									<a href="tiendahombre.php" title="Title">Hombres, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="tiendaautos.html" title="Title">Parte de Autos</a>
+									<a href="tiendaautos.php" title="Title">Parte de Autos</a>
 								</li>
 								<li>
 								
-									<a href="tiendajuegos.html" title="Title">Juegos, Computadoras, Celulares...</a>
+									<a href="tiendajuegos.php" title="Title">Juegos, Computadoras, Celulares...</a>
 									
 								<li>
-									<a href="tiendapeliculas.html" title="Title">Películas, Música, Guitarras...</a>
+									<a href="tiendapeliculas.php" title="Title">Películas, Música, Guitarras...</a>
 								</li>
 								<li>
-									<a href="tiendacasa.html" title="Title">Casa, Jardineria</a>
+									<a href="tiendacasa.php" title="Title">Casa, Jardineria</a>
 								</li>
 								<li>
-									<a href="tiendadeporte.html" title="Title">Deportes, Salud</a>
+									<a href="tiendadeporte.php" title="Title">Deportes, Salud</a>
 								</li>
 								<li>
-									<a href="tiendaninos.html" title="Title">Niños, Bebes, Juguetes</a>
+									<a href="tiendaninos.php" title="Title">Niños, Bebes, Juguetes</a>
 								</li>
 								<li>
-									<a href="tiendalibros.html" title="Title">Libros</a>
+									<a href="tiendalibros.php" title="Title">Libros</a>
 								</li>
 								<li>
-									<a href="tiendafiesta.html" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
+									<a href="tiendafiesta.php" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
 								</li>
 							</ul>
 						</div>

@@ -1,4 +1,6 @@
-
+<?php
+      session_start();
+?>
 <!DOCTYPE html>
 <!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
@@ -14,6 +16,7 @@
 		
 		<!-- Styles -->
 		<link rel="stylesheet" href="css/frenzy-orange.css">
+		<link rel="stylesheet" href="css/easy507.css">
 		
 		<!-- Fav and touch icons -->
 		<link rel="shortcut icon" href="img/ico/favicon.ico">
@@ -50,9 +53,9 @@
 								<?php
 								    session_start();
                                     if (isset($_SESSION["cuenta_paginas"])){ 
-									   	$_SESSION["cuenta_paginas"] = 1; 
+									   	$_SESSION["cuenta_paginas"] = 0; 
 									}else{ 
-									   $_SESSION["cuenta_paginas"]=0; 
+									   	$_SESSION["cuenta_paginas"]=1; 
 									}
                                     $archivo_contador = "contador/visitas.txt";
                                     $leer = fopen($archivo_contador,"r");
@@ -102,36 +105,38 @@
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 						</div>
 						<ul class="first-level dropdown-nav">							
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li class="current"><a href="index.php">Inicio</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="#">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="cotizar.html">Cotizar</a></li>
-							<li><a href="#">Promociones</a></li>							
+							<li><a href="post.php">Calculdora</a></li>
+							<li><a href="post.php">Cotizar</a></li>
+							<li><a href="post-single.php">Promociones</a></li>							
 							
 						</ul>
 					</nav>
 					<!-- este menu que se usa cuando es responsivo lo voy a crear de forma diferente para no hacer el codigo tan largo -->
 					<nav id="main-navigation" class="visible-desktop">
 						<ul class="first-level">
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li class="current"><a href="index507.php">Inicio</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="cotizar.html">Cotizar</a></li>
-							<li><a href="#">Promociones</a></li>							
+							<li><a href="post.php">Calculdora</a></li>
+							<li><a href="post.php">Cotizar</a></li>
+							<li><a href="post-single.php">Promociones</a></li>							
 							
 						</ul>
 					</nav>
@@ -188,37 +193,32 @@
 							<div class="separator"></div>
 						</div>
 						<div class="sidebar-content menu-widget">
-					<ul>
+							<ul>
 								<li>
-									<a href="tiendamujer.html" title="Title">Mujer, Moda, Calzados, Ropa...</a>
+									<a href="#" title="Title">Primary Menu 1</a>
 								</li>
 								<li>
-									<a href="tiendahombre.html" title="Title">Hombres, Moda, Calzados, Ropa...</a>
+									<a href="#" title="Title">Primary Menu 2</a>
 								</li>
 								<li>
-									<a href="tiendaautos.html" title="Title">Parte de Autos</a>
+									<a href="#" title="Title">Primary Menu 3</a>
 								</li>
 								<li>
-								
-									<a href="tiendajuegos.html" title="Title">Juegos, Computadoras, Celulares...</a>
-									
-								<li>
-									<a href="tiendapeliculas.html" title="Title">Películas, Música, Guitarras...</a>
+									<a title="Title">Another Menu 1 <span class="pull-right icon awe-chevron-down"></span></a>
+									<ul>
+										<li>
+											<a href="#" title="Title">Sub Menu 1 </a>
+										</li>
+										<li>
+											<a href="#" title="Title">Sub Menu 2</a>
+										</li>
+									</ul>
 								</li>
 								<li>
-									<a href="tiendacasa.html" title="Title">Casa, Jardineria</a>
+									<a href="#" title="Title">Yet Another Menu</a>
 								</li>
 								<li>
-									<a href="tiendadeporte.html" title="Title">Deportes, Salud</a>
-								</li>
-								<li>
-									<a href="tiendaninos.html" title="Title">Niños, Bebes, Juguetes</a>
-								</li>
-								<li>
-									<a href="tiendalibros.html" title="Title">Libros</a>
-								</li>
-								<li>
-									<a href="tiendafiesta.html" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
+									<a href="#" title="Title">Sample Menu</a>
 								</li>
 							</ul>
 						</div>
@@ -268,127 +268,49 @@
 							<div class="content-inner">
 								<article>
 									<div class="article-header">
-										<h1 class="title">Auto Partes</h1>
+										<h1 class="title">Beneficios</h1>
 										
 										<div class="separator"></div>
 									</div>
 									<div class="article-thumbnail">
-											<a href="#"><img  class="beneficio" src="img/assets/507/autopartes.jpg"/></a>
+										<a href="#"><img src="img/assets/slideshow/slide-1.png" alt="thumbnail" /></a>
 										<div class="caption">Image Caption Goes In Here</div>
 									</div>
 									<div class="article-content">
-								<ul>
-								<table>
-        <tr>
-            <td>
-                <a href="http://Motosport.com">Motosport.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-                <a href="http://MotorcycleSuperstore.com">MotorcycleSuperstore.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;<a href="http://CarPartsWholesale.com">CarPartsWholesale.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-                <a href="http://bikebandit.com">bikebandit.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://jcWhitney.com">jcWhitney.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-                &nbsp;<a href="http://Motosport.com">Motosport.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;<a href="http://RockAuto.com">RockAuto.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-                &nbsp;<a href="http://jpcycles.com">jpcycles.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://4x4superstore.com">4x4superstore.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-                &nbsp;<a href="http://Autopartswarehouse.com">Autopartswarehouse.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://AutoPart.com">AutoPart.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-                <a href="http://westmarine.com">westmarine.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://cskauto.com">cskauto.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-                &nbsp;<a href="http://nissanpartszone.com">nissanpartszone.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://napaonline.com">napaonline.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-                &nbsp;<a href="http://parts.com">parts.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://AutoPartsGIANT.com">AutoPartsGIANT.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-                &nbsp;<a href="http://boatersworld.com">boatersworld.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;<a href="http://classicautoparts.com">classicautoparts.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-                <a href="http://danchuk.com">danchuk.com</a></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="http://MotorcycleParts.com">MotorcycleParts.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-                &nbsp;<a href="http://summitracing.com">summitracing.com</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;<a href="http://kanter.com">kanter.com</a></td>
-            <td style="width: 50px">
-            </td>
-            <td>
-            </td>
-        </tr>
-    </table>
-		
-            
-										
-								</ul>
 
-									<!--
-										<h2 class="post-lead">Blockquotes</h2>
+									  <ol>
+										<li>Tendr&aacute;s a tu alcance muchos productos que no consigues 
+										en el pa&iacute;s o que son muy costosos.</li>
+										<li>          
+										Seguridad y confiabilidad en las compras por Internet.</li>
+										<li> F&aacute;cil y sin complicaciones, nosotros nos encargamos de todo 
+										el proceso hasta la llegada de tu paquete.</li>
+										<li> No existen contraltos 
+										ni mensualidaes usted paga por lo que trae.</li>
+										<li>Tendras la oportunidad de comprar o subastar a trav&eacute;s de una 
+										cuenta de eBay con direcci&oacute;n en los EE.UU.</li>
+										<li>Las compras ser&aacute;n realizadas a trav&eacute;s de un abono del 50% y pagaras la 
+										diferencia cuando tu mercanc&iacute;a este en tus manos.</li>
+										<li>Efectuamos una 
+										verificaci&oacute;n de las p&aacute;ginas en donde deseas comprar.</li>
+										<li>Recibes tu dinero de vuelta, si el 
+										producto no llegase seg&uacute;n nuestras condiciones de aceptaci&oacute;n.</li>
+										<li>        
+										Precios accesibles para el transporte mar&iacute;timo y a&eacute;reo.</li>
+										<li>         
+										   Flexibilidad en cuanto a horarios.</li>
+										<li> Notificaci&oacute;n autom&aacute;tica a la llegada de tu paquete 
+										por correo electr&oacute;nico y chat a su celular.</li>
+										<li> No necesitas tener tarjeta de cr&eacute;dito, como consecuencia 
+										nadie puede copiar la informaci&oacute;n de la tarjeta.</li>
+										<li> Ahorras tiempo, ya que el proceso 
+										de ordenar tu pedido es realizado por nosotros.</li>
+										<li> Su email privado esta protegido ya 
+										que nuestro sistema filtra los emails no deseados.</li>
+									</ol>
+										<h3 class="post-lead">Blockquotes</h3>
 										<blockquote>
-											<p>Somos una empresa totalmente nueva, estamos ubicados 
-										  en Urbanizaci&oacute;n Green Valley Calle A No. 111, Albrook, 
-										  Anc&oacute;n.<br>Cont&aacute;ctanos a los tel&eacute;fonos: <br>Oficina: 
-										  (507)315-0563<br>Celular:6220-1905.<br> </p>
+											<p>Quid paulo ante, inquit, dixerim nonne meministi, cum omnis dolor detractus esset, variari, non augeri voluptatem?</p>
 											<small>Someone famous <cite title="Source Title">Source Title</cite></small>
 										</blockquote>
 
@@ -407,8 +329,7 @@
 										<p>
 											Ut dignissim aliquet nibh tristique hendrerit. Donec ullamcorper nulla quis metus vulputate id placerat augue eleifend. Aenean venenatis consectetur orci, sit amet ultricies magna sagittis vel. Nulla non diam nisi, ut ultrices massa. Pellentesque sed nisl metus. Praesent a mi vel ante molestie venenatis.
 										</p>
-									</div>	
-								-->
+									</div>								
 								</article>								
 							</div>
 

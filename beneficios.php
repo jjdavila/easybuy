@@ -1,5 +1,6 @@
-
-<!DOCTYPE html>
+<?php
+      session_start();
+?><!DOCTYPE html>
 <!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -14,6 +15,7 @@
 		
 		<!-- Styles -->
 		<link rel="stylesheet" href="css/frenzy-orange.css">
+		<link rel="stylesheet" href="css/easy507.css">
 		
 		<!-- Fav and touch icons -->
 		<link rel="shortcut icon" href="img/ico/favicon.ico">
@@ -47,7 +49,26 @@
 						<!-- top nav -->
 						<div class="topnav">
 							<div class="pull-left">
-								<span>Visitante numero: 10349423</span>
+								<?php
+								    session_start();
+                                    if (isset($_SESSION["cuenta_paginas"])){ 
+									   	$_SESSION["cuenta_paginas"] = 0; 
+									}else{ 
+									   	$_SESSION["cuenta_paginas"]=1; 
+									}
+                                    $archivo_contador = "contador/visitas.txt";
+                                    $leer = fopen($archivo_contador,"r");
+                                    $cuenta = trim(fread($leer,filesize($archivo_contador))); 
+
+                                    if ($cuenta != "") $cuenta = $_SESSION["cuenta_paginas"] + $cuenta;
+                                    else $cuenta = 1;
+                                    @fclose($leer);
+                                    $leer = fopen($archivo_contador,"w");
+                                    @fputs($leer,$cuenta);
+
+                                    @fclose($leer); 
+                                    echo '<span class="visitantes">Visitante numero: '.$cuenta.'</span>';
+                                ?>
 							</div>							
 						</div>
 					</div>
@@ -83,17 +104,17 @@
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 						</div>
 						<ul class="first-level dropdown-nav">							
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+						<li class="current"><a href="index.php">Inicio</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="cotizar.html">Cotizar</a></li>
+							<li><a href="calculadora.php">Calculdora</a></li>
+							<li><a href="cotizar.php">Cotizar</a></li>
 							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
@@ -101,17 +122,17 @@
 					<!-- este menu que se usa cuando es responsivo lo voy a crear de forma diferente para no hacer el codigo tan largo -->
 					<nav id="main-navigation" class="visible-desktop">
 						<ul class="first-level">
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li><a href="quienesomos507.html">Quienes Somos</a></li>
-							<li><a href="comofunciona.html">Como Funciona <span class="icon awe-chevron-down"></span></a>
+							<li class="current"><a href="index.php">Inicio</a></li>
+							<li><a href="quienesomos507.php">Quienes Somos</a></li>
+							<li><a href="comofunciona.php">Como Funciona <span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
-								    <li><a href="comofunciona.html">Como Funciona </a></li>
-									<li><a href="beneficios.html">Beneficios</a></li>
-									<li><a href="formadepago.html">Forma de pago</a></li>								
+								    <li><a href="comofunciona.php">Como Funciona </a></li>
+									<li><a href="beneficios.php">Beneficios</a></li>
+									<li><a href="formadepago.php">Forma de pago</a></li>								
 								</ul>
 							</li>														
-							<li><a href="calculadora.html">Calculdora</a></li>
-							<li><a href="cotizar.html">Cotizar</a></li>
+							<li><a href="calculadora.php">Calculdora</a></li>
+							<li><a href="cotizar.php">Cotizar</a></li>
 							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
@@ -169,37 +190,37 @@
 							<div class="separator"></div>
 						</div>
 						<div class="sidebar-content menu-widget">
-						<ul>
+					<ul>
 								<li>
-									<a href="tiendamujer.html" title="Title">Mujer, Moda, Calzados, Ropa...</a>
+									<a href="tiendamujer.php" title="Title">Mujer, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="tiendahombre.html" title="Title">Hombres, Moda, Calzados, Ropa...</a>
+									<a href="tiendahombre.php" title="Title">Hombres, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="tiendaautos.html" title="Title">Parte de Autos</a>
+									<a href="tiendaautos.php" title="Title">Parte de Autos</a>
 								</li>
 								<li>
 								
-									<a href="tiendajuegos.html" title="Title">Juegos, Computadoras, Celulares...</a>
+									<a href="tiendajuegos.php" title="Title">Juegos, Computadoras, Celulares...</a>
 									
 								<li>
-									<a href="tiendapeliculas.html" title="Title">Películas, Música, Guitarras...</a>
+									<a href="tiendapeliculas.php" title="Title">Películas, Música, Guitarras...</a>
 								</li>
 								<li>
-									<a href="tiendacasa.html" title="Title">Casa, Jardineria</a>
+									<a href="tiendacasa.php" title="Title">Casa, Jardineria</a>
 								</li>
 								<li>
-									<a href="tiendadeporte.html" title="Title">Deportes, Salud</a>
+									<a href="tiendadeporte.php" title="Title">Deportes, Salud</a>
 								</li>
 								<li>
-									<a href="tiendaninos.html" title="Title">Niños, Bebes, Juguetes</a>
+									<a href="tiendaninos.php" title="Title">Niños, Bebes, Juguetes</a>
 								</li>
 								<li>
-									<a href="tiendalibros.html" title="Title">Libros</a>
+									<a href="tiendalibros.php" title="Title">Libros</a>
 								</li>
 								<li>
-									<a href="tiendafiesta.html" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
+									<a href="tiendafiesta.php" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
 								</li>
 							</ul>
 						</div>
@@ -249,74 +270,35 @@
 							<div class="content-inner">
 								<article>
 									<div class="article-header">
-										<h1 class="title">Tienda de Libros...</h1>
+										<h1 class="title">Beneficios de Easy buy 507</h1>
 										
 										<div class="separator"></div>
 									</div>
 									<div class="article-thumbnail">
-											<a href="#"><img  class="beneficio" src="img/assets/507/tiendalibros.jpg"/></a>
-										<div class="caption">Image Caption Goes In Here</div>
+										<a href="#"><img  class="beneficio" src="img/assets/507/beneficios.png"/></a>
+										<div class="caption">Innovamos en el mercado</div>
 									</div>
-									<div class="article-content">
-								<ul>
-							<table>
-								<tr>
-									<td>
-										<a href="http://alibris.com">alibris.com</a></td>
-									<td style="width: 50px">
-									</td>
-									<td>
-										<a href="http://barnesandnoble.com">barnesandnoble.com</a></td>
-								</tr>
-								<tr>
-									<td>
-										<a href="http://amazon.com">amazon.com</a></td>
-									<td style="width: 50px">
-									</td>
-									<td>
-										<a href="http://scholasticstore.com">scholasticstore.com</a></td>
-								</tr>
-								<tr>
-									<td>
-										<a href="http://tfaw.com">tfaw.com</a></td>
-									<td style="width: 50px">
-									</td>
-									<td>
-									</td>
-								</tr>
-							</table>
-		
-            
+									<div class="article-content">				
+										<h3 class="post-lead">Beneficios</h3>
 										
-								</ul>
-
-									<!--
-										<h2 class="post-lead">Blockquotes</h2>
-										<blockquote>
-											<p>Somos una empresa totalmente nueva, estamos ubicados 
-										  en Urbanizaci&oacute;n Green Valley Calle A No. 111, Albrook, 
-										  Anc&oacute;n.<br>Cont&aacute;ctanos a los tel&eacute;fonos: <br>Oficina: 
-										  (507)315-0563<br>Celular:6220-1905.<br> </p>
-											<small>Someone famous <cite title="Source Title">Source Title</cite></small>
-										</blockquote>
-
-										<h3 class="post-lead">Unordered &amp; Ordered Lists</h3>
-										
-										<ul>
-											<li>Hoc est non modo cor non habere, sed ne palatum quidem.</li>
-											<li>Illis videtur, qui illud non dubitant bonum dicere -;</li>
-										</ul>
 										<ol>
-											<li>Si enim ita est, vide ne facinus facias, cum mori suadeas.</li>
-											<li>Familiares nostros, credo, Sironem dicis et Philodemum, cum optimos viros, tum homines doctissimos.</li>
-											<li>Sed tamen enitar et, si minus multa mihi occurrent, non fugiam ista popularia.</li>
-											<li>At iam decimum annum in spelunca iacet.</li>
+											<li>Tendrás a tu alcance muchos productos que no consigues en el país o que son muy costosos.</li>
+											<li>Seguridad y confiabilidad en las compras por Internet.</li>
+											<li>Fácil y sin complicaciones, nosotros nos encargamos de todo el proceso hasta la llegada de tu paquete.</li>
+											<li>No existen contraltos ni mensualidades usted paga por lo que trae.</li>
+											<li>Tendrás la oportunidad de comprar o subastar a través de una cuenta de eBay con dirección en los EE.UU.</li>
+											<li>Las compras serán realizadas a través de un abono del 50% y pagaras la diferencia cuando tu mercancía este en tus manos.</li>
+											<li>Efectuamos una verificación de las páginas en donde deseas comprar.</li>
+											<li>Recibes tu dinero de vuelta, si el producto no llegase según nuestras condiciones de aceptación.</li>
+											<li>Precios accesibles para el transporte marítimo y aéreo.</li>
+											<li>Flexibilidad en cuanto a horarios.</li>
+											<li>Notificación automática a la llegada de tu paquete por correo electrónico y chat a su celular.</li>
+											<li>No necesitas tener tarjeta de crédito, como consecuencia nadie puede copiar la información de la tarjeta.</li>
+											<li>Ahorras tiempo, ya que el proceso de ordenar tu pedido es realizado por nosotros.</li>
+											<li>Su email privado está protegido ya que nuestro sistema filtra los emails no deseados.</li>										
 										</ol>
-										<p>
-											Ut dignissim aliquet nibh tristique hendrerit. Donec ullamcorper nulla quis metus vulputate id placerat augue eleifend. Aenean venenatis consectetur orci, sit amet ultricies magna sagittis vel. Nulla non diam nisi, ut ultrices massa. Pellentesque sed nisl metus. Praesent a mi vel ante molestie venenatis.
-										</p>
-									</div>	
-								-->
+										
+									</div>								
 								</article>								
 							</div>
 
