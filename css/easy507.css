@@ -33,3 +33,6 @@
 	color: blue;
 	border: solid 1px;
 }
+.minimenu  a{
+    font-size: 0.5em;    
+}

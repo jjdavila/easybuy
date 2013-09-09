@@ -74,15 +74,14 @@
 								<input class="input-medium" type="text" placeholder="Search&hellip;">
 							</form> -->
 							<ul class="user-menu">
-								<li><a href="#signInModal" data-toggle="modal">Sign In</a></li>								
+								<li><a href="#signInModal" data-toggle="modal">Ingresar</a></li>								
 								<li class="dropdown">
-								    <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account 
+								    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mi Cuenta 
 								    	<span class="awe-caret-down icon-white"></span></a>
-								    <ul class="dropdown-menu">
-									    <li><a href="#"><span class="awe-dashboard"></span> Dashboard</a></li>
+								    <ul class="dropdown-menu">									    
 								    	<li><a href="#"><span class="awe-user"></span> Perfil</a></li>
 								    	<li><a href="#"><span class="awe-cog"></span> Configuracion</a></li>
-								    	<li><a href="#"><span class="awe-signout"></span> </a></li>
+								    	<li><a href="#"><span class="awe-signout"></span> Cerrar Sesion</a></li>
 								    </ul>
 								</li>
 							</ul>
@@ -98,7 +97,7 @@
 								</ul>
 							</li>														
 							<li><a href="calculadora.php">Calculdora</a></li>
-							<li><a href="post.php">Cotizar</a></li>
+							<li><a href="cotizar.php">Cotizar</a></li>
 							<li><a href="#">Promociones</a></li>							
 							
 						</ul>
@@ -126,19 +125,19 @@
 						<div class="social-media">
 							<ul>
 								<li><a href="#"><span class="awe-facebook"></span></a></li>
-								<li><a href="#"><span class="awe-twitter"></span></a></li>								
+								<li><a href="https://twitter.com/JonathanJD2" target="_blank" class="awe-twitter" data-show-count="false" data-lang="en"></a></li>							
 								<li><a href="#"><span class="awe-google-plus"></span></a></li>								
 							</ul>
 						</div>
 						<div class="pull-right">
 							<ul>
 								<li>
-									<ul>
+									<ul class="minimenu">
 										<li><a href="#signInModal" data-toggle="modal">Ingresar</a></li>							
 										<li class="dropdown">
 										    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mi cuenta
 										    	<span class="awe-caret-down icon-white"></span></a>
-										    <ul class="dropdown-menu">											    
+										    <ul class="dropdown-menu minimenu">											    
 										    	<li><a href="#"><span class="awe-user"></span> Perfi</a></li>
 										    	<li><a href="#"><span class="awe-cog"></span> Configuracion</a></li>
 										    	<li><a href="#"><span class="awe-signout"></span> Cerrar sescion</a></li>
@@ -491,19 +490,19 @@
 <div id="signInModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
     <div class="modal-header">
     	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    	<h3 id="signInModalLabel">Sign In</h3>
+    	<h3 id="signInModalLabel">Ingresar</h3>
     </div>
 	<div class="modal-body">
 		<form method="post" action="#" name="login_form">
 			<p><input type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
 			<p><input type="password" class="span3" name="passwd" placeholder="Password"></p>
-			<p><button type="submit" class="btn btn-primary">Sign in</button>
-				<a href="#">Forgot Password?</a>
+			<p><button type="submit" class="btn btn-primary">Ingresar</button>
+				<a href="#">Olvisates la contraseña?</a>
 			</p>
 		</form>
 	</div>
 	<div class="modal-footer">
-		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Salir</button>
 	</div>
 </div>
 

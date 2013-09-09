@@ -8,7 +8,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Left Sidebar | Frenzy Responsive HTML Template</title>
+		<title>Easy Buy 507</title>
 		<meta name="description" content="">
 		<meta name="author" content="bonfirelab | www.bonfirelab.com">
 		<meta name="robots" content="index, follow">
@@ -74,15 +74,14 @@
 								<input class="input-medium" type="text" placeholder="Search&hellip;">
 							</form> -->
 							<ul class="user-menu">
-								<li><a href="#signInModal" data-toggle="modal">Sign In</a></li>								
+								<li><a href="#signInModal" data-toggle="modal">Ingresar</a></li>								
 								<li class="dropdown">
-								    <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account 
+								    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mi Cuenta 
 								    	<span class="awe-caret-down icon-white"></span></a>
-								    <ul class="dropdown-menu">
-									    <li><a href="#"><span class="awe-dashboard"></span> Dashboard</a></li>
+								    <ul class="dropdown-menu">									    
 								    	<li><a href="#"><span class="awe-user"></span> Perfil</a></li>
 								    	<li><a href="#"><span class="awe-cog"></span> Configuracion</a></li>
-								    	<li><a href="#"><span class="awe-signout"></span> </a></li>
+								    	<li><a href="#"><span class="awe-signout"></span> Cerrar Sesion</a></li>
 								    </ul>
 								</li>
 							</ul>
@@ -126,7 +125,7 @@
 						<div class="social-media">
 							<ul>
 								<li><a href="#"><span class="awe-facebook"></span></a></li>
-								<li><a href="#"><span class="awe-twitter"></span></a></li>								
+								<li><a href="https://twitter.com/JonathanJD2" target="_blank" class="awe-twitter" data-show-count="false" data-lang="en"></a></li>							
 								<li><a href="#"><span class="awe-google-plus"></span></a></li>								
 							</ul>
 						</div>
@@ -214,34 +213,14 @@
 					<div class="sidebar-widget" id="latest-news">
 						
 						<div class="sidebar-header">
-							<h4>Noticias Video juegos</h4>
+							<h4>Twitter</h4>
 							<div class="separator"></div>
 						</div>
 						<div class="sidebar-content post-widget">
-						
-							<ul>
-								<li class="sidebar-item">
-									<a href="#" class="image-polaroid" title="Title">
-										<img src="img/assets/slideshow/thumbnail-square.png" alt="Image" />
-									</a>
-									<h5><a href="#">Consectetur Adipiscing Elit Maecenas Justo Massa</a></h5>
-									<span class="post-date"><em>November, 10 2012</em></span>
-								</li>
-								<li class="sidebar-item">
-									<a href="#" class="image-polaroid" title="Title">
-										<img src="img/assets/slideshow/thumbnail-square.png" alt="Image" />
-									</a>
-									<h5><a href="#">Consectetur Adipiscing Elit Maecenas Justo Massa</a></h5>
-									<span class="post-date"><em>November, 10 2012</em></span>
-								</li>
-								<li class="sidebar-item">
-									<a href="#" class="image-polaroid" title="Title">
-										<img src="img/assets/slideshow/thumbnail-square.png" alt="Image" />
-									</a>
-									<h5><a href="#">Consectetur Adipiscing Elit Maecenas Justo Massa</a></h5>
-									<span class="post-date"><em>November, 10 2012</em></span>
-								</li>
-							</ul>
+						<!--codigo de twitter inicio-->
+						<a class="twitter-timeline"  href="https://twitter.com/JonathanJD2"  data-widget-id="377097161109823489">Tweets por @JonathanJD2</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						<!--codigo de twitter fin-->			
 						</div>
 					</div>
 				</div>
@@ -276,7 +255,7 @@
 										<div >
 												<p class="color"><em>Datos para contacto</em></p>
 												<address>
-													<p><strong>Frenzy, Inc.</strong></p>
+													<p><strong>Easy buy</strong></p>
 													<p><span class="awe-home"></span> Green Valley Calle A No. 111 </p>
 													<p><span class="awe-map-marker"></span> Albrook, Anc&oacute;n.</p>
 													<p><span class="awe-phone"></span><abbr title="Phone"> P:</abbr> (507)315-0563</p>
