@@ -6,7 +6,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>404 | Frenzy Responsive HTML Template</title>
+		<title>404 | Easy 507 Error</title>
 		<meta name="description" content="">
 		<meta name="author" content="bonfirelab | www.bonfirelab.com">
 		<meta name="robots" content="index, follow">
