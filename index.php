@@ -164,75 +164,73 @@
 					<!-- Begin Slider -->
 					<div id="slidejs">
 						<!-- Slide items -->
-						<div class="slides-container">	
+						<div class="slides-container">								
 							<div class="slide-outer span8">
 								<div class="slide-inner">
-									<a href="#" title="title"><img src="img/assets/slideshow/thumbnail-big.png" alt="image"></a>
+									<a href="#" title="title"><img src="img/assets/slideshow/fird.png" alt="image"></a>
+								</div>
+								
+								<div class="slide-caption">
+									<div class="caption-inner">
+										<div class="caption-after"></div>
+										<div class="caption">
+											1. Nos dices que producto deseas comprar o nos das la direccion de la pagina donde esta el producto.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide-outer span8">
+								<div class="slide-inner">
+									<a href="#" title="title"><img src="img/assets/slideshow/seconds.png" alt="image"></a>
+								</div>
+								
+								<div class="slide-caption">
+									<div class="caption-inner">
+										<div class="caption-after"></div>
+										<div class="caption">
+											2. Te enviamos la cotizacion del total de tu compra con un peso estimado. 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide-outer span8">
+								<div class="slide-inner">
+									<a href="#" title="title"><img src="img/assets/slideshow/buy.png" alt="image"></a>
+								</div>
+								
+								<div class="slide-caption">
+									<div class="caption-inner">
+										<div class="caption-after"></div>
+										<div class="caption">
+											3. Si decides comprarlo, debes proceder a efectuar un depoosito por el 50% del valor de tu compra.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide-outer span8">
+								<div class="slide-inner">
+									<a href="#" title="title"><img src="img/assets/slideshow/tird.png" alt="image"></a>
+								</div>
+								
+								<div class="slide-caption">
+									<div class="caption-inner">
+										<div class="caption-after"></div>
+										<div class="caption">
+											4. Te enviamos los correos de confirmacion del pago de tu compra.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide-outer span8">
+								<div class="slide-inner">
+									<a href="#" title="title"><img src="img/assets/slideshow/fin.png" alt="image"></a>
 								</div>
 							
 								<div class="slide-caption">
 									<div class="caption-inner">
 										<div class="caption-after"></div>
 										<div class="caption">
-											Id est enim, de quo quaerimus. Portenta haec esse dicit, neque ea ratione ullo modo posse vivi; At multis malis affectus.
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="slide-outer span8">
-								<div class="slide-inner">
-									<a href="#" title="title"><img src="img/assets/slideshow/thumbnail-big.png" alt="image"></a>
-								</div>
-								
-								<div class="slide-caption">
-									<div class="caption-inner">
-										<div class="caption-after"></div>
-										<div class="caption">
-											Praesent a tellus vitae nisl vehicula semper 
-											Quisque bibendum molestie molestie
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="slide-outer span8">
-								<div class="slide-inner">
-									<a href="#" title="title"><img src="img/assets/slideshow/thumbnail-big.png" alt="image"></a>
-								</div>
-								
-								<div class="slide-caption">
-									<div class="caption-inner">
-										<div class="caption-after"></div>
-										<div class="caption">
-											Sic vester sapiens magno aliquo emolumento commotus cicuta, si opus erit, dimicabit.
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="slide-outer span8">
-								<div class="slide-inner">
-									<a href="#" title="title"><img src="img/assets/slideshow/thumbnail-big.png" alt="image"></a>
-								</div>
-								
-								<div class="slide-caption">
-									<div class="caption-inner">
-										<div class="caption-after"></div>
-										<div class="caption">
-											Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-											Praesent a tellus vitae nisl vehicula semper.
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="slide-outer span8">
-								<div class="slide-inner">
-									<a href="#" title="title"><img src="img/assets/slideshow/thumbnail-big.png" alt="image"></a>
-								</div>
-								
-								<div class="slide-caption">
-									<div class="caption-inner">
-										<div class="caption-after"></div>
-										<div class="caption">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tamen intellego quid velit. Universa enim illorum
+											5. Cuando el producto llegue a nuestras oficinas te informaremos para que pases a retirarlo. 
 										</div>
 									</div>
 								</div>
@@ -247,7 +245,7 @@
 				<!-- Begin Span4 Carousel Slider --> 
 				<div class="span4 carousel-widget visible-desktop" id="slider-widget">
 					<div class="widget-header">
-						<h3 class="widget-heading">Trending Topics</h3>
+						<h3 class="widget-heading">Videos Sobresalietes</h3>
 					</div>
 					<div class="widget-content carousel slide" id="carousel-widget">
 						<ol class="carousel-indicators">
@@ -409,51 +407,52 @@
 		<!-- Main Content Wrapper Start -->
 		<div class="container" role="main">
 			<section id="popular-content" class="row visible-desktop">
+				
 				<div class="popular-item span3">
 					<div class="popular-image">
-						<a href="#" title="title"><img src="img/assets/placeholder/htmlcss.png" alt="image" /></a>
+						<a href="#" title="title"><img src="img/assets/placeholder/uno.png" alt="image" /></a>
 					</div>
 					<div class="popular-content">
-						<h4><a href="#" title="title">HTML5/CSS3</a></h4>
+						<h4><a href="#" title="title">Publicidad Disponible</a></h4>
 						<p>
-							Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-							Praesent a tellus vitae nisl vehicula semper. 
+							<!-- Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
+							Praesent a tellus vitae nisl vehicula semper.  -->
 						</p>
 					</div>
 				</div>
 				<div class="popular-item span3">
 					<div class="popular-image">
-						<a href="#" title="title"><img src="img/assets/placeholder/bootstrap.png" alt="image" /></a>
+						<a href="#" title="title"><img src="img/assets/placeholder/dos.png" alt="image" /></a>
 					</div>
 					<div class="popular-content">
-						<h4><a href="#" title="title">Build With Bootstrap</a></h4>
+						<h4><a href="#" title="title">Publicidad Disponible</a></h4>
 						<p>
-							Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-							Praesent a tellus vitae nisl vehicula semper. 
+							<!-- Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
+							Praesent a tellus vitae nisl vehicula semper.  -->
 						</p>
 					</div>
 				</div>
 				<div class="popular-item span3">
 					<div class="popular-image">
-						<a href="#" title="title"><img src="img/assets/placeholder/lesscss.png" alt="image" /></a>
+						<a href="#" title="title"><img src="img/assets/placeholder/tres.png" alt="image" /></a>
 					</div>
 					<div class="popular-content">
-						<h4><a href="#" title="title">Powered by LESSCSS</a></h4>
+						<h4><a href="#" title="title">Publicidad Disponible</a></h4>
 						<p>
-							Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-							Praesent a tellus vitae nisl vehicula semper. 
+							<!-- Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
+							Praesent a tellus vitae nisl vehicula semper.  -->
 						</p>
 					</div>
 				</div>
 				<div class="popular-item span3">
 					<div class="popular-image">
-						<a href="#" title="title"><img src="img/assets/placeholder/responsive.png" alt="image" /></a>
+						<a href="#" title="title"><img src="img/assets/placeholder/cuatro.png" alt="image" /></a>
 					</div>
 					<div class="popular-content">
-						<h4><a href="#" title="title">Responsive Ready</a></h4>
+						<h4><a href="#" title="title">Publicidad Disponible</a></h4>
 						<p>
-							Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-							Praesent a tellus vitae nisl vehicula semper. 
+						<!-- 	Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
+							Praesent a tellus vitae nisl vehicula semper. --> 
 						</p>
 					</div>
 				</div>

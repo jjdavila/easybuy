@@ -134,7 +134,7 @@
 						<div class="pull-right">
 							<ul>
 								<li>
-									<ul>
+									<ul class="minimenu">
 										<li><a href="#signInModal" data-toggle="modal">Ingresar</a></li>							
 										<li class="dropdown">
 										    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mi cuenta
