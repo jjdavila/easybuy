@@ -15,10 +15,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- Styles -->
-		<link rel="stylesheet" href="css/frenzy-orange.css">
+		<link rel="stylesheet" href="css/frenzy-orange.css">  <link rel="stylesheet" href="css/easy507.css">
 		
 		<!-- Fav and touch icons -->
-		<link rel="shortcut icon" href="img/ico/favicon.ico">
+		<link rel="shortcut icon" href="img/ico/favicon.png">
 
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
@@ -74,14 +74,10 @@
 							<ul class="user-menu">
 								<li><a href="#signInModal" data-toggle="modal">Ingresar</a></li>								
 								<li class="dropdown">
-								    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mi Cuenta 
-								    	<span class="awe-caret-down icon-white"></span></a>
-								    <ul class="dropdown-menu">									    
-								    	<li><a href="#"><span class="awe-user"></span> Perfil</a></li>
-								    	<li><a href="#"><span class="awe-cog"></span> Configuracion</a></li>
-								    	<li><a href="#"><span class="awe-signout"></span> Cerrar Sesion</a></li>
-								    </ul>
-								</li>
+								     <?php                                  
+				                                    include 'php/login_user.php';
+				                                ?>
+										</li>
 							</ul>
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 						</div>
@@ -97,7 +93,7 @@
 							</li>														
 							<li><a href="calculadora.php">Calculdora</a></li>
 							<li><a href="cotizar.php">Cotizar</a></li>
-							<li><a href="#">Promociones</a></li>							
+							<li><a href="formularioregistro.php">Registrate</a></li>
 							
 						</ul>
 					</nav>
@@ -115,16 +111,16 @@
 							</li>														
 							<li><a href="calculadora.php">Calculdora</a></li>
 							<li><a href="cotizar.php">Cotizar</a></li>
-							<li><a href="#">Promociones</a></li>							
+							<li><a href="formularioregistro.php">Registrate</a></li>
 							
 						</ul>
 					</nav>
 					<nav id="secondary-navigation" class="visible-desktop">
 						<div class="social-media">
 							<ul>
-								<li><a href="#"><span class="awe-facebook"></span></a></li>
-								<li><a href="https://twitter.com/JonathanJD2" target="_blank" class="awe-twitter" data-show-count="false" data-lang="en"></a></li>							
-								<li><a href="#"><span class="awe-google-plus"></span></a></li>								
+									<li><a href="https://m.facebook.com/profile.php?id=179279285592741&__user=1535890948" target="_blank"><span class="awe-facebook"></span></a></li>
+								<li><a href="https://twitter.com/easybuy507pty" target="_blank" class="awe-twitter" data-show-count="false" data-lang="en"></a></li>							
+								<!--<li><a href="#"><span class="awe-google-plus"></span></a></li>	-->								
 							</ul>
 						</div>
 						<div class="pull-right">
@@ -133,13 +129,9 @@
 									<ul class="minimenu">
 										<li><a href="#signInModal" data-toggle="modal">Ingresar</a></li>							
 										<li class="dropdown">
-										    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mi cuenta
-										    	<span class="awe-caret-down icon-white"></span></a>
-										    <ul class="dropdown-menu">											    
-										    	<li><a href="#"><span class="awe-user"></span> Perfi</a></li>
-										    	<li><a href="#"><span class="awe-cog"></span> Configuracion</a></li>
-										    	<li><a href="#"><span class="awe-signout"></span> Cerrar sescion</a></li>
-										    </ul>
+								     <?php                                  
+				                                    include 'php/login_user.php';
+				                                ?>
 										</li>
 									</ul>
 								</li>								
@@ -172,39 +164,39 @@
 							<div class="separator"></div>
 						</div>
 						<div class="sidebar-content menu-widget">
-						<ul>
+					<ul>
 								<li>
-									<a href="tiendamujer.html" title="Title">Mujer, Moda, Calzados, Ropa...</a>
+									<a href="tiendamujer.php" title="Title">Mujer, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="tiendahombre.html" title="Title">Hombres, Moda, Calzados, Ropa...</a>
+									<a href="tiendahombre.php" title="Title">Hombres, Moda, Calzados, Ropa...</a>
 								</li>
 								<li>
-									<a href="tiendaautos.html" title="Title">Parte de Autos</a>
+									<a href="tiendaautos.php" title="Title">Parte de Autos</a>
 								</li>
 								<li>
 								
-									<a href="tiendajuegos.html" title="Title">Juegos, Computadoras, Celulares...</a>
+									<a href="tiendajuegos.php" title="Title">Juegos, Computadoras, Celulares...</a>
 									
 								<li>
-									<a href="tiendapeliculas.html" title="Title">Películas, Música, Guitarras...</a>
+									<a href="tiendapeliculas.php" title="Title">Películas, Música, Guitarras...</a>
 								</li>
 								<li>
-									<a href="tiendacasa.html" title="Title">Casa, Jardineria</a>
+									<a href="tiendacasa.php" title="Title">Casa, Jardineria</a>
 								</li>
 								<li>
-									<a href="tiendadeporte.html" title="Title">Deportes, Salud</a>
+									<a href="tiendadeporte.php" title="Title">Deportes, Salud</a>
 								</li>
 								<li>
-									<a href="tiendaninos.html" title="Title">Niños, Bebes, Juguetes</a>
+									<a href="tiendaninos.php" title="Title">Niños, Bebes, Juguetes</a>
 								</li>
 								<li>
-									<a href="tiendalibros.html" title="Title">Libros</a>
+									<a href="tiendalibros.php" title="Title">Libros</a>
 								</li>
 								<li>
-									<a href="tiendafiesta.html" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
+									<a href="tiendafiesta.php" title="Title">Fiestas, Cumpleaños, Mascotas...</a>
 								</li>
-							</ul>
+					</ul>
 						</div>
 					</div>
 					<!-- Latest News Widget -->
@@ -215,10 +207,60 @@
 							<div class="separator"></div>
 						</div>
 						<div class="sidebar-content post-widget">
-						<!--codigo de twitter inicio-->
-						<a class="twitter-timeline"  href="https://twitter.com/JonathanJD2"  data-widget-id="377097161109823489">Tweets por @JonathanJD2</a>
+							<!--codigo de twitter inicio-->				
+						<a class="twitter-timeline"  href="https://twitter.com/easybuy507pty"  data-widget-id="384308828000378880">Tweets by @easybuy507pty</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						<!--codigo de twitter fin-->
 						</div>
+						
+												
+						<!-- INICIO codigo de fb-->
+						
+						<h4>FACEBOOK</h4>
+						
+						
+	 			<script>
+						  window.fbAsyncInit = function() {
+							// init the FB JS SDK
+							FB.init({
+							  appId      : 'YOUR_APP_ID',                        // App ID from the app dashboard
+							  channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel file for x-domain comms
+							  status     : true,                                 // Check Facebook Login status
+							  xfbml      : true                                  // Look for social plugins on the page
+							});
+
+							// Additional initialization code such as adding Event Listeners goes here
+						  };
+
+						  // Load the SDK asynchronously
+						  (function(d, s, id){
+							 var js, fjs = d.getElementsByTagName(s)[0];
+							 if (d.getElementById(id)) {return;}
+							 js = d.createElement(s); js.id = id;
+							 js.src = "//connect.facebook.net/en_US/all.js";
+							 fjs.parentNode.insertBefore(js, fjs);
+						   }(document, 'script', 'facebook-jssdk'));
+						</script>
+						 
+
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+												
+													<div id="fb-root"></div>
+	
+						
+						<!--https://www.facebook.com/easybuy507-->
+						<div class="fb-like" data-href="https://m.facebook.com/profile.php?id=179279285592741&__user=1535890948" data-width="450" data-show-faces="true" data-send="true"></div>
+						<!--<div class="fb-like" data-href="http://www.facebook.com/jjdavilas" data-width="450" data-show-faces="true" data-send="true"></div>-->
+						<!--	<div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-show-faces="true" data-send="true"></div>-->
+
+						<!-- fin codigo de fb-->
 					</div>
 				</div>
 
@@ -345,6 +387,25 @@
 			</div>
 		</footer>
 		<!-- Footer End -->
+		<!-- Modal -->
+<div id="signInModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-header">
+    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    	<h3 id="signInModalLabel">Ingresar</h3>
+    </div>
+	<div class="modal-body">
+		<form method="post" action="/easy507index/php/login.php" name="login_form">
+			<p><input type="text" class="span3" name="email" id="email" placeholder="Email"></p>
+			<p><input type="password" class="span3" name="passwd" id="passwd" placeholder="Password"></p>
+			<p><button id="btnenviar" type="submit" class="btn btn-primary">Ingresar</button>
+				<!-- <a href="#">Olvisates la contraseña?</a> -->
+			</p>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Salir</button>
+	</div>
+</div>
 
 
 	</body>

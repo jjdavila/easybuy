@@ -603,6 +603,9 @@ ol {
   padding: 0;
   margin: 0 0 9px 25px;
 }
+ul.minimenu{  
+  font-size: 1,7em;
+}
 ul ul,
 ul ol,
 ol ol,
@@ -4179,6 +4182,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #fff;
   cursor: default;
 }
+/*estilo del efecto al salir el modal*/
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -4217,6 +4221,32 @@ input[type="submit"].btn.btn-mini {
   background-clip: padding-box;
   outline: none;
 }
+.modal-azafata {
+  color: rgb(8, 3, 9);
+  font-size: 1.1em;
+  font-style: bold;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1050;
+  width: 700px;
+  margin: -250px 0 0 -280px;
+  list-style-type: none;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  text-align : justify;
+  /* IE6-7 */
+
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: none;
+}
 .modal.fade {
   -webkit-transition: opacity .3s linear, top .3s ease-out;
   -moz-transition: opacity .3s linear, top .3s ease-out;
@@ -4231,6 +4261,12 @@ input[type="submit"].btn.btn-mini {
   padding: 9px 15px;
   border-bottom: 1px solid #eee;
 }
+.modal-header-azafata {
+  padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+  background-color: rgb(174, 159, 180);
+  color: rgb(8, 3, 9);
+}
 .modal-header .close {
   margin-top: 2px;
 }
@@ -4241,6 +4277,12 @@ input[type="submit"].btn.btn-mini {
 .modal-body {
   overflow-y: auto;
   max-height: 400px;
+  padding: 15px;
+}
+/*body del modal de azafatas*/
+.modal-body-azafata{
+   overflow-y: auto;
+  max-height: 1200px;
   padding: 15px;
 }
 .modal-form {
@@ -7161,7 +7203,7 @@ ul.icons li .awe-large:before {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf098;&nbsp;');
 }
 .awe-twitter {
-  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf099;&nbsp;');
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '');
 }
 .awe-facebook {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09a;&nbsp;');
@@ -8810,11 +8852,11 @@ header h1#logo {
   margin: 0;
   width: 160px;
   height: 95px;
-  background-color: #f47e00;
-  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#ff9625), to(#f47e00));
-  background-image: -webkit-radial-gradient(circle, #ff9625, #f47e00);
-  background-image: -moz-radial-gradient(circle, #ff9625, #f47e00);
-  background-image: -o-radial-gradient(circle, #ff9625, #f47e00);
+  background-color: white;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(white), to(white));
+  background-image: -webkit-radial-gradient(circle, white, white);
+  background-image: -moz-radial-gradient(circle, white, white);
+  background-image: -o-radial-gradient(circle, white, white);
   background-repeat: no-repeat;
 }
 header h1#logo a {
@@ -9096,7 +9138,8 @@ header nav#main-navigation ul > li ul li ul {
 }
 header nav#secondary-navigation {
   height: 45px;
-  background: url("../img/assets/second-nav-bg.png") repeat-x;
+  /*background: url("../img/assets/second-nav-bg.png") repeat-x;*/
+  background-color: #FFFFFF;  
 }
 header nav#secondary-navigation ul {
   padding: 8px 20px;
@@ -9113,7 +9156,7 @@ header nav#secondary-navigation ul li ul li {
   margin-right: 10px;
   list-style: outside disc;
   padding-right: 15px;
-  color: #ffffff;
+  color: #000000;
 }
 header nav#secondary-navigation ul li ul li:first-child {
   list-style: none;
@@ -9123,7 +9166,7 @@ header nav#secondary-navigation ul li ul li:last-child {
   margin-right: 0;
 }
 header nav#secondary-navigation ul li ul li a {
-  color: #ffffff;
+  color: #030303;
 }
 header nav#secondary-navigation ul li ul li a:hover {
   color: #f47e00;
@@ -9181,7 +9224,7 @@ header nav#secondary-navigation > .social-media ul > li {
   display: block;
   float: left;
   margin: 0 0 0 10px;
-  background-color: #777;
+  background-color: rgb(53, 135, 195);
   width: 27px;
   height: 27px;
   -webkit-border-radius: 1000px;
@@ -11346,6 +11389,7 @@ options {
   font-size: 18px;
   line-height: 24px;
 }
+/*estilo de la cabecera del modal*/
 .modal-header {
   color: #535353;
 }

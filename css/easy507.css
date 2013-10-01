@@ -14,6 +14,7 @@
 .salida_calculo{
 	
 	text-align: right;
+
 }
 .valor_calculo{
 
@@ -30,9 +31,52 @@
 }
 .visitantes{
 	font-size: 1.3em;
-	color: blue;
+	color: white;
 	border: solid 1px;
+	width: 100%;
+	margin-left: 1010px;
 }
 .minimenu  a{
     font-size: 0.5em;    
 }
+.hidden{
+	font-size: 1em;
+	color: red;
+	display:none;
+}
+.ingresa{
+	font-size: 0.5em;
+	color: black;
+
+}
+.modal-img{
+	width: 20em;
+	height: 15em;
+	margin-left: 14%;
+}
+#rojo{
+	color: red;
+}
+.publicidad{
+width: 95%;
+display: block;
+vertical-align: bottom;   
+ min-height: 5em;  
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+
+}
+/*.restringido{
+	visibility:hidden;
+}
+#restringido{
+	display: none;
+}*/
+#contenido, #contenido1, #contenido2{
+	font-size: 1em;
+	color: red;
+	display: none;
+
+}
+

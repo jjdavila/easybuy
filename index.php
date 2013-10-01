@@ -15,10 +15,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- Styles -->
-		<link rel="stylesheet" href="css/frenzy-orange.css">
+		<link rel="stylesheet" href="css/frenzy-orange.css">  <link rel="stylesheet" href="css/easy507.css">
 		<link rel="stylesheet" href="css/easy507.css">
 		<!-- Fav and touch icons -->
-		<link rel="shortcut icon" href="img/ico/favicon.ico">
+		<link rel="shortcut icon" href="img/ico/favicon.png">
 
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
@@ -30,14 +30,17 @@
 
 		<script src="js/libs/modernizr.js"></script>
 		<script src="js/libs/selectivizr-min.js"></script>
+		<script src="js/easy507/index.js"></script>
 		
 		<script src="js/bootstrap/bootstrap.js"></script>
 		<script src="js/plugins/slides.jquery.js"></script>
 		<script src="js/plugins/camera.min.js"></script>
 		<script src="js/custom.js"></script>
-
+			
+		
 	</head>
 	<body>
+	
 		<div id="bg"><img src="img/assets/bg/halftone.png" alt="background image" /></div>
 
 		<!--///////////////////////////// Header Area //////////////////////////////////-->
@@ -52,8 +55,7 @@
 							<div class="pull-left">
                                   <?php                                  
                                     include 'php/contador.php';
-                                ?>
-								
+                                ?>								
 							</div>							
 						</div>
 					</div>
@@ -76,14 +78,11 @@
 							<ul class="user-menu">
 								<li><a href="#signInModal" data-toggle="modal">Ingresar</a></li>								
 								<li class="dropdown">
-								    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mi Cuenta 
-								    	<span class="awe-caret-down icon-white"></span></a>
-								    <ul class="dropdown-menu">									    
-								    	<li><a href="#"><span class="awe-user"></span> Perfil</a></li>
-								    	<li><a href="#"><span class="awe-cog"></span> Configuracion</a></li>
-								    	<li><a href="#"><span class="awe-signout"></span> Cerrar Sesion</a></li>
-								    </ul>
+								     <?php                                  
+				                                    include 'php/login_user.php';
+				                                ?>
 								</li>
+								
 							</ul>
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 						</div>
@@ -98,14 +97,17 @@
 							</li>														
 							<li><a href="calculadora.php">Calculdora</a></li>
 							<li><a href="cotizar.php">Cotizar</a></li>
-							<li><a href="#">Promociones</a></li>							
+							<li><a href="formularioregistro.php">Registrate</a></li>
+							<!-- <li id="restringido"><a href="formulario.php">Formulario</a></li> -->
+							
+														
 							
 						</ul>
 					</nav>
 					<!-- este menu que se usa cuando es responsivo lo voy a crear de forma diferente para no hacer el codigo tan largo -->
 					<nav id="main-navigation" class="visible-desktop">
 						<ul class="first-level">
-							<li class="current"><a href="index507.php">Inicio</a></li>
+							<li class="current"><a href="index.php">Inicio</a></li>
 							<li><a href="quienesomos507.php">Quienes Somos</a></li>
 							<li><a href="comofunciona.php">Como Funciona<span class="icon awe-chevron-down"></span></a>
 								<ul class="second-level">
@@ -117,16 +119,17 @@
 							</li>														
 							<li><a href="calculadora.php">Calculdora</a></li>
 							<li><a href="cotizar.php">Cotizar</a></li>
-							<li><a href="#">Promociones</a></li>							
+							<li><a href="formularioregistro.php">Registrate</a></li>
+							<!-- <li class="restringido" ><a href="formulario.php">Formulario</a></li>							 -->
 							
 						</ul>
 					</nav>
 					<nav id="secondary-navigation" class="visible-desktop">
 						<div class="social-media">
 							<ul>
-								<li><a href="#"><span class="awe-facebook"></span></a></li>
-								<li><a href="https://twitter.com/JonathanJD2" target="_blank" class="awe-twitter" data-show-count="false" data-lang="en"></a></li>							
-								<li><a href="#"><span class="awe-google-plus"></span></a></li>								
+								<li><a href="https://m.facebook.com/profile.php?id=179279285592741&__user=1535890948" target="_blank"><span class="awe-facebook"></span></a></li>
+								<li><a href="https://twitter.com/easybuy507pty" target="_blank" class="awe-twitter" data-show-count="false" data-lang="en"></a></li>							
+								<!--<li><a href="#"><span class="awe-google-plus"></span></a></li>	-->							
 							</ul>
 						</div>
 						<div class="pull-right">
@@ -135,18 +138,17 @@
 									<ul class="minimenu">
 										<li><a href="#signInModal" data-toggle="modal">Ingresar</a></li>							
 										<li class="dropdown">
-										    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mi cuenta
-										    	<span class="awe-caret-down icon-white"></span></a>
-										    <ul class="dropdown-menu minimenu">											    
-										    	<li><a href="#"><span class="awe-user"></span> Perfi</a></li>
-										    	<li><a href="#"><span class="awe-cog"></span> Configuracion</a></li>
-										    	<li><a href="#"><span class="awe-signout"></span> Cerrar sescion</a></li>
-										    </ul>
-										</li>
+										    <?php                                  
+				                                    include 'php/login_user.php';
+				                                ?>										    	
+										</li>								
 									</ul>
+							
 								</li>								
 							</ul>
+								
 						</div>
+					
 					</nav>
 					<!-- Navigation End -->
 					</div>
@@ -164,7 +166,24 @@
 					<!-- Begin Slider -->
 					<div id="slidejs">
 						<!-- Slide items -->
-						<div class="slides-container">								
+						<div class="slides-container">	
+
+							<div class="slide-outer span8">
+							
+								<div class="slide-inner">
+									<a href="#" title="title"><img src="img/assets/slideshow/carretilla.png" alt="image"></a>
+								</div>
+								
+								<div class="slide-caption">
+									<div class="caption-inner">
+										<div class="caption-after"></div>
+										<div class="caption">
+											Compras por Internet, Facil y Seguro.
+										</div>
+									</div>
+								</div>
+							</div>
+							
 							<div class="slide-outer span8">
 								<div class="slide-inner">
 									<a href="#" title="title"><img src="img/assets/slideshow/fird.png" alt="image"></a>
@@ -179,9 +198,10 @@
 									</div>
 								</div>
 							</div>
+							
 							<div class="slide-outer span8">
 								<div class="slide-inner">
-									<a href="#" title="title"><img src="img/assets/slideshow/seconds.png" alt="image"></a>
+									<a href="#" title="title"><img src="img/assets/slideshow/segunda.png" alt="image"></a>
 								</div>
 								
 								<div class="slide-caption">
@@ -193,9 +213,10 @@
 									</div>
 								</div>
 							</div>
+							
 							<div class="slide-outer span8">
 								<div class="slide-inner">
-									<a href="#" title="title"><img src="img/assets/slideshow/buy.png" alt="image"></a>
+									<a href="#" title="title"><img src="img/assets/slideshow/pago.png" alt="image"></a>
 								</div>
 								
 								<div class="slide-caption">
@@ -207,9 +228,10 @@
 									</div>
 								</div>
 							</div>
+							
 							<div class="slide-outer span8">
 								<div class="slide-inner">
-									<a href="#" title="title"><img src="img/assets/slideshow/tird.png" alt="image"></a>
+									<a href="#" title="title"><img src="img/assets/slideshow/correo.png" alt="image"></a>
 								</div>
 								
 								<div class="slide-caption">
@@ -221,6 +243,7 @@
 									</div>
 								</div>
 							</div>
+							
 							<div class="slide-outer span8">
 								<div class="slide-inner">
 									<a href="#" title="title"><img src="img/assets/slideshow/fin.png" alt="image"></a>
@@ -235,8 +258,85 @@
 									</div>
 								</div>
 							</div>
+							
+							<div class="slide-outer span8">
+								<div class="slide-inner">
+									<a href="#" title="title"><img src="img/assets/slideshow/amazon.png" alt="image"></a>
+								</div>
+							
+								<div class="slide-caption">
+									<div class="caption-inner">
+										<div class="caption-after"></div>
+										<div class="caption">
+											6. En Amanzon encontrara toda clase de articulos. 
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="slide-outer span8">
+								<div class="slide-inner">
+									<a href="#" title="title"><img src="img/assets/slideshow/ebay.png" alt="image"></a>
+								</div>
+							
+								<div class="slide-caption">
+									<div class="caption-inner">
+										<div class="caption-after"></div>
+										<div class="caption">
+											 7. En Ebay encontrara toda clase de articulos. 
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						<div class="slide-outer span8">
+								<div class="slide-inner">
+									<a href="#" title="title"><img src="img/assets/slideshow/tigerdirect.png" alt="image"></a>
+								</div>
+							
+							<div class="slide-caption">
+									<div class="caption-inner">
+										<div class="caption-after"></div>
+										<div class="caption">
+											8. En Tiger Direct encontrara toda clase de articulos. 
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+						<div class="slide-outer span8">
+								<div class="slide-inner">
+									<a href="#" title="title"><img src="img/assets/slideshow/best-buy.png" alt="image"></a>
+								</div>
+							
+							<div class="slide-caption">
+									<div class="caption-inner">
+										<div class="caption-after"></div>
+										<div class="caption">
+											9. En Best Buy encontrara toda clase de articulos. 
+										</div>
+									</div>
+								</div>
 						</div>
-
+						
+						<div class="slide-outer span8">
+								<div class="slide-inner">
+									<a href="#" title="title"><img src="img/assets/slideshow/walmart.png" alt="image"></a>
+								</div>
+							
+							<div class="slide-caption">
+									<div class="caption-inner">
+										<div class="caption-after"></div>
+										<div class="caption">
+											10. En WaltMart encontrara toda clase de articulos. 
+										</div>
+									</div>
+								</div>
+						</div>
+						
+						</div>
+					
 					</div>
 					<!-- End Slider -->
 				</div>
@@ -245,7 +345,7 @@
 				<!-- Begin Span4 Carousel Slider --> 
 				<div class="span4 carousel-widget visible-desktop" id="slider-widget">
 					<div class="widget-header">
-						<h3 class="widget-heading">Videos Sobresalietes</h3>
+						<h3 class="widget-heading">Nuestras Azafatas</h3>
 					</div>
 					<div class="widget-content carousel slide" id="carousel-widget">
 						<ol class="carousel-indicators">
@@ -254,140 +354,153 @@
 							<li data-slide-to="2" data-target="#carousel-widget"></li>
 						</ol>
 						<!-- Begin Carousel Inner -->
-						<div class="carousel-inner">
+						<div  class="carousel-inner">
+						<div id="azafatas1" class="slide-section active item"> </div>
+						<div id="azafatas2" class="slide-section item"> </div>
+						<div id="azafatas3" class="slide-section item"> </div>
+						<div id="azafatas4" class="slide-section item"> </div>
 							<!-- Begin Slide Section / Carousel Item -->
-							<div class="slide-section active item">
+							<!-- <div class="s|lide-section active item">
 								<div class="separator"></div>
-							    <div class="slide-item media">
-								    <a class="pull-left media-thumbnail" href="#">
-								    	<img class="media-object" src="img/assets/slideshow/thumbnail-square.png" alt="thumbnail" />
-								    </a>
-								    <div class="media-body">
-									    <h4 class="media-heading"><a href="#">Lorem ipsum dolor set amet</a></h4>
-										<p>Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-										Praesent a tellus vitae nisl vehicula semper.
-										</p> 
-								    </div>
-								</div>
-
-								<div class="separator"></div>
-
 								<div class="slide-item media">
-								    <a class="pull-left media-thumbnail" href="#">
-								    	<img class="media-object" src="img/assets/slideshow/thumbnail-square.png" alt="thumbnail" />
-								    </a>
-								    <div class="media-body">
-									    <h4 class="media-heading"><a href="#">Lorem ipsum dolor set amet</a></h4>
-										<p>Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-										Praesent a tellus vitae nisl vehicula semper.
-										</p> 
-								    </div>
-								</div>
+								<a class="pull-left media-thumbnail" href="#">
+								<img class="media-object" src="../easy507index/img/azafatas/avatar-1.png" alt="thumbnail" />
+								</a><div class="media-body">
+								<h4 class="media-heading">
+								<a href="#">migel vecs</a>
 								
+								</h4>
+								<p>Luego en la página upload.php que es que se encarga de recibir los datos del }
+								formulario (Lo definimos en la propiedad action del formulario). El archivo 
+								seleccionado es subido temporalmente a una carpeta, entonces tenemos que copiar
+								el archivo a la carpeta final, en caso contrario este archivo se eliminará automáticamente.</p>
+								</div>
+								</div> 
 								<div class="separator"></div>
-
 								<div class="slide-item media">
-								    <a class="pull-left media-thumbnail" href="#">
-								    	<img class="media-object" src="img/assets/slideshow/thumbnail-square.png" alt="thumbnail" />
-								    </a>
-								    <div class="media-body">
-									    <h4 class="media-heading"><a href="#">Lorem ipsum dolor set amet</a></h4>
-										<p>Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-										Praesent a tellus vitae nisl vehicula semper.
-										</p> 
-								    </div>
+								<a class="pull-left media-thumbnail" href="#">
+								<img class="media-object" src="../easy507index/img/azafatas/avatar-1.png" alt="thumbnail" />
+								</a><div class="media-body">
+								<h4 class="media-heading">
+								<a href="#">migel vecs</a>
+								
+								</h4>
+								<p>Luego en la página upload.php que es que se encarga de recibir los datos del }
+								formulario (Lo definimos en la propiedad action del formulario). El archivo 
+								seleccionado es subido temporalmente a una carpeta, entonces tenemos que copiar
+								el archivo a la carpeta final, en caso contrario este archivo se eliminará automáticamente.</p>
+								</div>
+								</div>
+								<div class="separator"></div>
+								<div class="slide-item media">
+								<a class="pull-left media-thumbnail" href="#">
+								<img class="media-object" src="../easy507index/img/azafatas/avatar-1.png" alt="thumbnail" />
+								</a><div class="media-body">
+								<h4 class="media-heading">
+								<a href="#">migel vecs</a>
+								
+								</h4>
+								<p>Luego en la página upload.php que es que se encarga de recibir los datos del }
+								formulario (Lo definimos en la propiedad action del formulario). El archivo 
+								seleccionado es subido temporalmente a una carpeta, entonces tenemos que copiar
+								el archivo a la carpeta final, en caso contrario este archivo se eliminará automáticamente.</p>
+								</div>
 								</div>
 							</div>
-							<!-- End Slide Section / Carousel Item -->
-							<!-- =================================================================== -->
-							<!-- Begin Slide Section / Carousel Item -->
 							<div class="slide-section item">
 								<div class="separator"></div>
-							    <div class="slide-item media">
-								    <a class="pull-left media-thumbnail" href="#">
-								    	<img class="media-object" src="img/assets/slideshow/thumbnail-square.png" alt="thumbnail" />
-								    </a>
-								    <div class="media-body">
-									    <h4 class="media-heading"><a href="#">Lorem ipsum dolor set amet</a></h4>
-										<p>Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-										Praesent a tellus vitae nisl vehicula semper.
-										</p> 
-								    </div>
-								</div>
-
-								<div class="separator"></div>
-
 								<div class="slide-item media">
-								    <a class="pull-left media-thumbnail" href="#">
-								    	<img class="media-object" src="img/assets/slideshow/thumbnail-square.png" alt="thumbnail" />
-								    </a>
-								    <div class="media-body">
-									    <h4 class="media-heading"><a href="#">Lorem ipsum dolor set amet</a></h4>
-										<p>Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-										Praesent a tellus vitae nisl vehicula semper.
-										</p> 
-								    </div>
-								</div>
+								<a class="pull-left media-thumbnail" href="#">
+								<img class="media-object" src="../easy507index/img/azafatas/avatar-1.png" alt="thumbnail" />
+								</a><div class="media-body">
+								<h4 class="media-heading">
+								<a href="#">migel vecs</a>
 								
+								</h4>
+								<p>Luego en la página upload.php que es que se encarga de recibir los datos del }
+								formulario (Lo definimos en la propiedad action del formulario). El archivo 
+								seleccionado es subido temporalmente a una carpeta, entonces tenemos que copiar
+								el archivo a la carpeta final, en caso contrario este archivo se eliminará automáticamente.</p>
+								</div>
+								</div> 
 								<div class="separator"></div>
-
 								<div class="slide-item media">
-								    <a class="pull-left media-thumbnail" href="#">
-								    	<img class="media-object" src="img/assets/slideshow/thumbnail-square.png" alt="thumbnail" />
-								    </a>
-								    <div class="media-body">
-									    <h4 class="media-heading"><a href="#">Lorem ipsum dolor set amet</a></h4>
-										<p>Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-										Praesent a tellus vitae nisl vehicula semper.
-										</p> 
-								    </div>
+								<a class="pull-left media-thumbnail" href="#">
+								<img class="media-object" src="../easy507index/img/azafatas/avatar-1.png" alt="thumbnail" />
+								</a><div class="media-body">
+								<h4 class="media-heading">
+								<a href="#">migel vecs</a>
+								
+								</h4>
+								<p>Luego en la página upload.php que es que se encarga de recibir los datos del }
+								formulario (Lo definimos en la propiedad action del formulario). El archivo 
+								seleccionado es subido temporalmente a una carpeta, entonces tenemos que copiar
+								el archivo a la carpeta final, en caso contrario este archivo se eliminará automáticamente.</p>
+								</div>
+								</div>
+								<div class="separator"></div>
+								<div class="slide-item media">
+								<a class="pull-left media-thumbnail" href="#">
+								<img class="media-object" src="../easy507index/img/azafatas/avatar-1.png" alt="thumbnail" />
+								</a><div class="media-body">
+								<h4 class="media-heading">
+								<a href="#">migel vecs</a>
+								
+								</h4>
+								<p>Luego en la página upload.php que es que se encarga de recibir los datos del }
+								formulario (Lo definimos en la propiedad action del formulario). El archivo 
+								seleccionado es subido temporalmente a una carpeta, entonces tenemos que copiar
+								el archivo a la carpeta final, en caso contrario este archivo se eliminará automáticamente.</p>
+								</div>
 								</div>
 							</div>
-							<!-- End Slide Section / Carousel Item -->
-							<!-- =================================================================== -->
-							<!-- Begin Slide Section / Carousel Item -->
 							<div class="slide-section item">
 								<div class="separator"></div>
-							    <div class="slide-item media">
-								    <a class="pull-left media-thumbnail" href="#">
-								    	<img class="media-object" src="img/assets/slideshow/thumbnail-square.png" alt="thumbnail" />
-								    </a>
-								    <div class="media-body">
-									    <h4 class="media-heading"><a href="#">Lorem ipsum dolor set amet</a></h4>
-										<p>Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-										Praesent a tellus vitae nisl vehicula semper.
-										</p> 
-								    </div>
-								</div>
-
-								<div class="separator"></div>
-
 								<div class="slide-item media">
-								    <a class="pull-left media-thumbnail" href="#">
-								    	<img class="media-object" src="img/assets/slideshow/thumbnail-square.png" alt="thumbnail" />
-								    </a>
-								    <div class="media-body">
-									    <h4 class="media-heading"><a href="#">Lorem ipsum dolor set amet</a></h4>
-										<p>Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-										Praesent a tellus vitae nisl vehicula semper.
-										</p> 
-								    </div>
-								</div>
+								<a class="pull-left media-thumbnail" href="#">
+								<img class="media-object" src="../easy507index/img/azafatas/avatar-1.png" alt="thumbnail" />
+								</a><div class="media-body">
+								<h4 class="media-heading">
+								<a href="#">migel vecs</a>
 								
-								<div class="separator"></div>
-
-								<div class="slide-item media">
-								    <a class="pull-left media-thumbnail" href="#">
-								    	<img class="media-object" src="img/assets/slideshow/thumbnail-square.png" alt="thumbnail" />
-								    </a>
-								    <div class="media-body">
-									    <h4 class="media-heading"><a href="#">Lorem ipsum dolor set amet</a></h4>
-										<p>Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
-										Praesent a tellus vitae nisl vehicula semper.
-										</p> 
-								    </div>
+								</h4>
+								<p>Luego en la página upload.php que es que se encarga de recibir los datos del }
+								formulario (Lo definimos en la propiedad action del formulario). El archivo 
+								seleccionado es subido temporalmente a una carpeta, entonces tenemos que copiar
+								el archivo a la carpeta final, en caso contrario este archivo se eliminará automáticamente.</p>
 								</div>
-							</div>
+								</div> 
+								<div class="separator"></div>
+								<div class="slide-item media">
+								<a class="pull-left media-thumbnail" href="#">
+								<img class="media-object" src="../easy507index/img/azafatas/avatar-1.png" alt="thumbnail" />
+								</a><div class="media-body">
+								<h4 class="media-heading">
+								<a href="#">migel vecs</a>
+								
+								</h4>
+								<p>Luego en la página upload.php que es que se encarga de recibir los datos del }
+								formulario (Lo definimos en la propiedad action del formulario). El archivo 
+								seleccionado es subido temporalmente a una carpeta, entonces tenemos que copiar
+								el archivo a la carpeta final, en caso contrario este archivo se eliminará automáticamente.</p>
+								</div>
+								</div>
+								<div class="separator"></div>
+								<div class="slide-item media">
+								<a class="pull-left media-thumbnail" href="#">
+								<img class="media-object" src="../easy507index/img/azafatas/avatar-1.png" alt="thumbnail" />
+								</a><div class="media-body">
+								<h4 class="media-heading">
+								<a href="#">migel vecs</a>
+								
+								</h4>
+								<p>Luego en la página upload.php que es que se encarga de recibir los datos del }
+								formulario (Lo definimos en la propiedad action del formulario). El archivo 
+								seleccionado es subido temporalmente a una carpeta, entonces tenemos que copiar
+								el archivo a la carpeta final, en caso contrario este archivo se eliminará automáticamente.</p>
+								</div>
+								</div>
+							</div> -->
 							<!-- End Slide Section / Carousel Item -->
 							
 						</div>
@@ -409,11 +522,11 @@
 			<section id="popular-content" class="row visible-desktop">
 				
 				<div class="popular-item span3">
-					<div class="popular-image">
-						<a href="#" title="title"><img src="img/assets/placeholder/uno.png" alt="image" /></a>
+					<div >
+						<img class="publicidad" src="img/assets/placeholder/uno.PNG"/>
 					</div>
 					<div class="popular-content">
-						<h4><a href="#" title="title">Publicidad Disponible</a></h4>
+						<h4>SE VENDE XBOX 360 MODIFICADA, NUEVA, LLAMAR AL 6220-1905.</h4>
 						<p>
 							<!-- Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
 							Praesent a tellus vitae nisl vehicula semper.  -->
@@ -421,11 +534,12 @@
 					</div>
 				</div>
 				<div class="popular-item span3">
-					<div class="popular-image">
-						<a href="#" title="title"><img src="img/assets/placeholder/dos.png" alt="image" /></a>
+					<div >
+						<img class="publicidad" src="img/assets/placeholder/dos.PNG" alt="image" />
 					</div>
 					<div class="popular-content">
-						<h4><a href="#" title="title">Publicidad Disponible</a></h4>
+						<h4>SE ALQUILA APARTAMENTO EN EL P.H. VIVENDI TOWER Torre 300 DETRAS DE Plaza Edison, $1,300.00</h4>
+						<h4>llamar al 6843-8751</h4>
 						<p>
 							<!-- Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
 							Praesent a tellus vitae nisl vehicula semper.  -->
@@ -433,11 +547,11 @@
 					</div>
 				</div>
 				<div class="popular-item span3">
-					<div class="popular-image">
-						<a href="#" title="title"><img src="img/assets/placeholder/tres.png" alt="image" /></a>
+					<div >
+						<img class="publicidad" src="img/assets/placeholder/tres1.PNG" alt="image"/>
 					</div>
 					<div class="popular-content">
-						<h4><a href="#" title="title">Publicidad Disponible</a></h4>
+						<h4><a href="#" title="title">Se alquilan cuartos solos o compartidos edificio central park Torre Manhattan llamar al celular 6843-8751</a></h4>
 						<p>
 							<!-- Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
 							Praesent a tellus vitae nisl vehicula semper.  -->
@@ -445,11 +559,11 @@
 					</div>
 				</div>
 				<div class="popular-item span3">
-					<div class="popular-image">
-						<a href="#" title="title"><img src="img/assets/placeholder/cuatro.png" alt="image" /></a>
+					<div>
+						<img class="publicidad" src="img/assets/placeholder/ford.PNG" alt="image"/>
 					</div>
 					<div class="popular-content">
-						<h4><a href="#" title="title">Publicidad Disponible</a></h4>
+						<h4><a href="#" title="title">Ofrecemos servicios de azafatas para todos sus eventos, tenemos una variedad de jovenes con experiencia en este tramo, llamenos ,6220-1905 o 6843-8751</a></h4>
 						<p>
 						<!-- 	Ut dignissim aliquet nibh tristique. Donec ullamcorper nulla quis 
 							Praesent a tellus vitae nisl vehicula semper. --> 
@@ -492,11 +606,11 @@
     	<h3 id="signInModalLabel">Ingresar</h3>
     </div>
 	<div class="modal-body">
-		<form method="post" action="#" name="login_form">
-			<p><input type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
-			<p><input type="password" class="span3" name="passwd" placeholder="Password"></p>
-			<p><button type="submit" class="btn btn-primary">Ingresar</button>
-				<a href="#">Olvisates la contraseña?</a>
+		<form method="post" action="/easy507index/php/login.php" name="login_form">
+			<p><input type="text" class="span3" name="email" id="email" placeholder="Email"></p>
+			<p><input type="password" class="span3" name="passwd" id="passwd" placeholder="Password"></p>
+			<p><button id="btnenviar" type="submit" class="btn btn-primary">Ingresar</button>
+				<!-- <a href="#">Olvisates la contraseña?</a> -->
 			</p>
 		</form>
 	</div>

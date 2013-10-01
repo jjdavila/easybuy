@@ -15,9 +15,9 @@
 <? 
 $destinatario = "mveces8@gmail.com"; 
 $asunto = "Nuevo Cliente, Cotizacion"; 
-$youremail = trim(htmlspecialchars($_POST['your_email']));
-$yourname = stripslashes(strip_tags($_POST['your_name']));
-$yourmessage = stripslashes(strip_tags($_POST['your_message']));
+$youremail = trim(htmlspecialchars($_POST['contact_email']));
+$yourname = stripslashes(strip_tags($_POST['contact_name']));
+$yourmessage = stripslashes(strip_tags($_POST['contact_messages']));
             
 $cuerpo = ' 
 <html> 
@@ -56,7 +56,7 @@ mail($destinatario,$asunto,$cuerpo,$headers)
 ?>
  <script>  
  alert("Se ha enviado un correo al administrador del sitio, Gracias por preferirnos!!");
- window.location="../index.html"
+ window.location="../index.php"
  </script>
 </body>
 </html>
